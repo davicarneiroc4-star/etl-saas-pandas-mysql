@@ -1,0 +1,13 @@
+# Credenciais (nunca enviar)
+.env
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+venv/
+.venv/
+
+# Configurações locais do editor
+.vscode/

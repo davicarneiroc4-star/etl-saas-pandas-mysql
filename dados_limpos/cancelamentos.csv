@@ -1,0 +1,202 @@
+id_cancelamento,id_assinatura,data_cancelamento,motivo_cancelamento,tipo_cancelamento
+1,4,2026-06-22,preço alto,voluntário
+2,5,2026-03-03,insatisfação com o suporte,voluntário
+3,9,2026-04-16,preço alto,voluntário
+4,12,2026-04-27,migrou para concorrente,voluntário
+5,22,2026-08-17,falha de pagamento,involuntário
+6,25,2026-06-09,preço alto,voluntário
+7,32,2026-09-20,falta de recurso,voluntário
+8,38,2026-04-06,migrou para concorrente,voluntário
+9,40,2025-09-28,preço alto,voluntário
+10,44,2026-04-01,migrou para concorrente,voluntário
+11,57,2026-09-15,insatisfação com o suporte,voluntário
+12,59,2026-07-23,falha de pagamento,involuntário
+13,62,2026-04-08,falha de pagamento,involuntário
+14,63,2026-09-15,migrou para concorrente,voluntário
+15,66,2025-05-14,preço alto,voluntário
+16,70,2026-02-27,preço alto,voluntário
+17,71,2026-03-30,migrou para concorrente,voluntário
+18,78,2026-06-19,insatisfação com o suporte,voluntário
+19,80,2026-05-08,falta de recurso,voluntário
+20,82,2026-09-04,falha de pagamento,involuntário
+21,83,2025-09-02,insatisfação com o suporte,voluntário
+22,90,2026-06-09,insatisfação com o suporte,voluntário
+23,92,2025-05-25,migrou para concorrente,voluntário
+24,95,2026-09-08,falta de recurso,voluntário
+25,105,2025-04-06,falta de recurso,voluntário
+26,106,2026-05-02,falta de recurso,voluntário
+27,107,2026-07-03,falha de pagamento,involuntário
+28,109,2025-09-28,preço alto,voluntário
+29,113,2026-09-17,preço alto,voluntário
+30,119,2026-04-12,falha de pagamento,involuntário
+31,123,2026-07-18,insatisfação com o suporte,voluntário
+32,126,2026-09-05,falta de recurso,voluntário
+33,132,2026-05-10,insatisfação com o suporte,voluntário
+34,133,2025-12-18,insatisfação com o suporte,voluntário
+35,134,2026-01-20,preço alto,voluntário
+36,138,2026-07-08,falha de pagamento,involuntário
+37,140,2026-08-09,migrou para concorrente,voluntário
+38,145,2025-08-26,falha de pagamento,involuntário
+39,146,2025-03-26,falha de pagamento,involuntário
+40,150,2026-09-29,falha de pagamento,involuntário
+41,151,2026-02-03,falha de pagamento,involuntário
+42,153,2026-06-17,insatisfação com o suporte,voluntário
+43,164,2026-05-31,insatisfação com o suporte,voluntário
+44,170,2026-08-02,insatisfação com o suporte,voluntário
+45,171,2026-08-28,falha de pagamento,involuntário
+46,172,2025-06-01,insatisfação com o suporte,voluntário
+47,179,2024-11-18,migrou para concorrente,voluntário
+48,181,2026-09-02,falha de pagamento,involuntário
+49,184,2025-10-22,falha de pagamento,involuntário
+50,188,2026-05-18,falta de recurso,voluntário
+51,193,2026-06-14,migrou para concorrente,voluntário
+52,195,2026-06-22,falha de pagamento,involuntário
+53,198,2026-05-21,preço alto,voluntário
+54,199,2026-06-10,falha de pagamento,involuntário
+55,201,2026-08-23,insatisfação com o suporte,voluntário
+56,215,2025-11-05,insatisfação com o suporte,voluntário
+57,216,2026-07-29,falta de recurso,voluntário
+58,219,2026-09-15,falha de pagamento,involuntário
+59,223,2026-08-18,insatisfação com o suporte,voluntário
+60,226,2026-06-13,falta de recurso,voluntário
+61,228,2026-02-16,falha de pagamento,involuntário
+62,232,2026-04-16,migrou para concorrente,voluntário
+63,237,2026-08-17,preço alto,voluntário
+64,239,2026-07-16,preço alto,voluntário
+65,245,2025-07-08,preço alto,voluntário
+66,249,2026-02-08,insatisfação com o suporte,voluntário
+67,256,2025-08-08,falta de recurso,voluntário
+68,258,2025-10-11,falta de recurso,voluntário
+69,260,2026-09-12,insatisfação com o suporte,voluntário
+70,266,2025-06-23,migrou para concorrente,voluntário
+71,268,2026-08-12,preço alto,voluntário
+72,270,2026-07-30,preço alto,voluntário
+73,271,2026-05-16,migrou para concorrente,voluntário
+74,274,2026-03-20,insatisfação com o suporte,voluntário
+75,275,2026-06-18,preço alto,voluntário
+76,281,2026-08-23,falha de pagamento,involuntário
+77,282,2026-09-07,preço alto,voluntário
+78,285,2025-05-10,preço alto,voluntário
+79,289,2025-09-25,preço alto,voluntário
+80,294,2026-01-28,insatisfação com o suporte,voluntário
+81,297,2026-08-22,insatisfação com o suporte,voluntário
+82,299,2026-04-21,falta de recurso,voluntário
+83,301,2025-09-04,falha de pagamento,involuntário
+84,303,2026-07-29,falta de recurso,voluntário
+85,305,2026-04-07,preço alto,voluntário
+86,315,2026-05-14,falha de pagamento,involuntário
+87,316,2025-02-08,falha de pagamento,involuntário
+88,317,2026-01-25,migrou para concorrente,voluntário
+89,318,2025-05-29,insatisfação com o suporte,voluntário
+90,321,2026-01-07,insatisfação com o suporte,voluntário
+91,325,2024-12-16,falta de recurso,voluntário
+92,327,2026-04-04,falha de pagamento,involuntário
+93,328,2026-02-04,preço alto,voluntário
+94,330,2026-09-18,preço alto,voluntário
+95,331,2026-08-16,falha de pagamento,involuntário
+96,333,2026-08-08,insatisfação com o suporte,voluntário
+97,334,2026-08-17,falha de pagamento,involuntário
+98,335,2026-09-17,preço alto,voluntário
+99,341,2026-04-12,falta de recurso,voluntário
+100,343,2026-09-12,preço alto,voluntário
+101,344,2026-07-14,falha de pagamento,involuntário
+102,350,2026-08-20,migrou para concorrente,voluntário
+103,352,2026-05-17,preço alto,voluntário
+104,360,2026-03-16,insatisfação com o suporte,voluntário
+105,363,2026-08-25,preço alto,voluntário
+106,367,2026-09-28,falha de pagamento,involuntário
+107,370,2026-06-04,migrou para concorrente,voluntário
+108,374,2026-03-26,insatisfação com o suporte,voluntário
+109,376,2025-12-21,falta de recurso,voluntário
+110,377,2025-07-05,migrou para concorrente,voluntário
+111,379,2026-07-31,falta de recurso,voluntário
+112,380,2026-05-09,insatisfação com o suporte,voluntário
+113,388,2025-09-11,falha de pagamento,involuntário
+114,391,2026-08-02,insatisfação com o suporte,voluntário
+115,392,2026-03-05,falha de pagamento,involuntário
+116,393,2026-06-03,falta de recurso,voluntário
+117,394,2026-09-14,migrou para concorrente,voluntário
+118,395,2025-08-12,falha de pagamento,involuntário
+119,396,2026-08-09,migrou para concorrente,voluntário
+120,399,2026-06-01,migrou para concorrente,voluntário
+121,408,2026-09-08,preço alto,voluntário
+122,413,2026-03-02,falta de recurso,voluntário
+123,416,2026-08-11,insatisfação com o suporte,voluntário
+124,418,2026-02-05,insatisfação com o suporte,voluntário
+125,422,2026-08-17,falha de pagamento,involuntário
+126,434,2026-02-21,falha de pagamento,involuntário
+127,437,2026-07-20,falta de recurso,voluntário
+128,438,2026-06-23,preço alto,voluntário
+129,443,2026-03-12,insatisfação com o suporte,voluntário
+130,445,2026-04-23,insatisfação com o suporte,voluntário
+131,450,2025-08-07,insatisfação com o suporte,voluntário
+132,451,2026-02-17,preço alto,voluntário
+133,452,2026-09-22,falha de pagamento,involuntário
+134,455,2026-09-27,preço alto,voluntário
+135,456,2026-09-22,falha de pagamento,involuntário
+136,457,2026-04-16,migrou para concorrente,voluntário
+137,460,2026-04-02,preço alto,voluntário
+138,465,2026-09-26,preço alto,voluntário
+139,472,2025-09-24,falha de pagamento,involuntário
+140,473,2025-01-24,falha de pagamento,involuntário
+141,481,2026-01-26,falha de pagamento,involuntário
+142,484,2026-09-29,insatisfação com o suporte,voluntário
+143,491,2026-09-23,falha de pagamento,involuntário
+144,493,2025-05-19,insatisfação com o suporte,voluntário
+145,495,2026-07-21,falta de recurso,voluntário
+146,496,2026-02-21,falta de recurso,voluntário
+147,502,2026-09-19,migrou para concorrente,voluntário
+148,504,2026-09-16,falta de recurso,voluntário
+149,513,2026-09-08,falha de pagamento,involuntário
+150,514,2026-03-04,falta de recurso,voluntário
+151,515,2026-04-01,migrou para concorrente,voluntário
+152,523,2026-09-19,preço alto,voluntário
+153,531,2026-09-01,falha de pagamento,involuntário
+154,536,2025-12-23,falha de pagamento,involuntário
+155,537,2026-05-12,falta de recurso,voluntário
+156,538,2026-05-31,falha de pagamento,involuntário
+157,542,2026-07-21,migrou para concorrente,voluntário
+158,543,2026-04-21,falta de recurso,voluntário
+159,547,2026-09-12,insatisfação com o suporte,voluntário
+160,551,2026-02-05,insatisfação com o suporte,voluntário
+161,553,2026-09-25,falha de pagamento,involuntário
+162,555,2026-02-06,preço alto,voluntário
+163,556,2026-08-14,preço alto,voluntário
+164,557,2025-12-12,preço alto,voluntário
+165,558,2026-09-24,falta de recurso,voluntário
+166,564,2026-08-02,falha de pagamento,involuntário
+167,567,2026-08-29,insatisfação com o suporte,voluntário
+168,568,2026-05-08,migrou para concorrente,voluntário
+169,576,2026-03-23,falta de recurso,voluntário
+170,577,2026-09-19,preço alto,voluntário
+171,582,2026-08-11,preço alto,voluntário
+172,584,2026-04-13,falha de pagamento,involuntário
+173,585,2025-08-09,falta de recurso,voluntário
+174,595,2026-01-26,insatisfação com o suporte,voluntário
+175,600,2025-11-04,insatisfação com o suporte,voluntário
+176,607,2026-09-09,falta de recurso,voluntário
+177,611,2025-08-11,insatisfação com o suporte,voluntário
+178,615,2026-09-10,falha de pagamento,involuntário
+179,620,2026-07-20,falha de pagamento,involuntário
+180,622,2026-03-15,falha de pagamento,involuntário
+181,623,2026-09-12,insatisfação com o suporte,voluntário
+182,625,2026-09-05,falta de recurso,voluntário
+183,638,2026-09-19,falta de recurso,voluntário
+184,644,2025-07-30,preço alto,voluntário
+185,647,2026-04-15,insatisfação com o suporte,voluntário
+186,648,2025-07-23,falha de pagamento,involuntário
+187,649,2026-05-04,falta de recurso,voluntário
+188,651,2025-06-02,falta de recurso,voluntário
+189,655,2025-09-16,preço alto,voluntário
+190,658,2025-08-26,falta de recurso,voluntário
+191,662,2025-11-26,falta de recurso,voluntário
+192,664,2026-08-10,falha de pagamento,involuntário
+193,667,2025-10-09,preço alto,voluntário
+194,675,2026-08-18,insatisfação com o suporte,voluntário
+195,677,2026-07-19,preço alto,voluntário
+196,680,2026-09-15,preço alto,voluntário
+197,688,2026-01-22,insatisfação com o suporte,voluntário
+198,690,2026-02-25,falha de pagamento,involuntário
+199,691,2025-08-13,preço alto,voluntário
+200,695,2026-09-25,insatisfação com o suporte,voluntário
+201,696,2026-06-03,falta de recurso,voluntário

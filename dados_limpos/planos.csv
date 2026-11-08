@@ -1,0 +1,7 @@
+id_plano,nome_plano,periodicidade,preco,limite_usuarios
+1,Free,mensal,0.0,3.0
+2,Basic,mensal,49.9,10.0
+3,Basic,anual,499.0,10.0
+4,Pro,mensal,149.9,50.0
+5,Pro,anual,1499.0,50.0
+6,Enterprise,mensal,499.9,

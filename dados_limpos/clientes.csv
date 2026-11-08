@@ -1,0 +1,601 @@
+id_cliente,nome_empresa,email,segmento,tamanho_empresa,estado,data_cadastro,status,email_ausente,email_duplicado
+1,Sousa,miguelcamargo@melo.com.br,Educação,Média,CE,2024-09-19,ativo,False,False
+2,Azevedo,pastoraugusto@novais.com.br,Saúde,Pequena,SC,2023-09-28,ativo,False,False
+3,Fonseca S/A,rael01@goncalves.br,Tecnologia,Média,PA,2024-07-23,cancelado,False,False
+4,Novais Martins E Filhos,abreudaniela@almeida.com,Financeiro,Grande,SP,2026-08-09,ativo,False,False
+5,Machado,wbarbosa@fonseca.gov.br,Saúde,Média,MG,2025-09-15,ativo,False,False
+6,Rezende - Ei,luiz-henriquefonseca@fogaca.com.br,Varejo,Grande,PA,2023-12-18,ativo,False,False
+7,Das Neves - Me,pietrasiqueira@cavalcante.br,Logística,Grande,SP,2026-04-07,cancelado,False,False
+8,Santos Sampaio E Filhos,vinicius16@viana.com.br,Financeiro,Média,MG,2023-10-12,ativo,False,False
+9,Pinto,marquesmaite@da.org,Tecnologia,Grande,BA,2026-08-05,ativo,False,False
+10,Azevedo,carolinemachado@marques.gov.br,Varejo,Média,PA,2023-10-26,trial,False,False
+11,Teixeira Moura - Ei,bvasconcelos@lima.com.br,Tecnologia,Média,RJ,2025-01-15,cancelado,False,True
+12,Casa Grande Peixoto S.A.,macedoana-beatriz@dias.com,Logística,Média,PA,2024-08-19,trial,False,False
+13,Dias - Ei,vitor97@azevedo.br,Financeiro,Média,BA,2024-01-24,trial,False,False
+14,Pinto,riosjose-miguel@siqueira.br,Logística,Média,CE,2025-10-01,cancelado,False,False
+15,Garcia,rjesus@rezende.br,Financeiro,Média,RJ,2023-10-17,cancelado,False,True
+16,Camargo Ltda.,,Financeiro,Grande,RJ,2024-02-07,trial,True,False
+17,Teixeira,lucaspires@da.br,Varejo,Pequena,CE,2026-03-28,trial,False,False
+18,Monteiro,luiz-otaviooliveira@cavalcante.edu.br,Tecnologia,Grande,SC,2026-06-15,trial,False,True
+19,Moreira E Filhos,zfonseca@da.br,Varejo,Grande,RJ,2023-11-12,cancelado,False,False
+20,Duarte,,Educação,Média,PR,2024-05-14,ativo,True,False
+21,Guerra,maria-helena44@oliveira.com,Logística,Pequena,RJ,2024-04-06,ativo,False,False
+22,Abreu,costalorenzo@novaes.br,Saúde,Pequena,MG,2026-02-06,trial,False,False
+23,Novaes,pedro-miguel73@correia.com,Logística,Grande,CE,2026-02-09,cancelado,False,False
+24,Fernandes Camargo - Me,ana-carolinasales@sa.com,Varejo,Grande,PR,2026-07-07,ativo,False,False
+25,Borges Lima S.A.,maria-julia17@siqueira.com.br,Varejo,Pequena,BA,2026-06-03,ativo,False,False
+26,Silveira Camargo Ltda.,gsa@garcia.br,Tecnologia,Grande,MG,2025-03-05,ativo,False,False
+27,Cavalcanti,benjaminborges@rocha.com.br,Varejo,Média,MG,2026-05-24,cancelado,False,False
+28,Ramos Casa Grande S.A.,ana-julia39@da.com.br,Logística,Pequena,PE,2026-02-09,trial,False,True
+29,Rezende S/A,abreubenicio@pastor.org,Financeiro,Pequena,RJ,2026-01-08,ativo,False,False
+30,Martins,earaujo@fernandes.edu.br,Varejo,Pequena,RS,2026-06-07,cancelado,False,False
+31,Vargas,alvesbernardo@cavalcanti.gov.br,Saúde,Pequena,PA,2026-09-02,trial,False,False
+32,Freitas,agathaaragao@da.org,Tecnologia,Média,BA,2025-07-11,cancelado,False,False
+33,Brito S/A,kazevedo@oliveira.gov.br,Financeiro,Grande,RJ,2025-11-22,cancelado,False,False
+34,Freitas,aragaoantonio@barbosa.br,Saúde,Pequena,PR,2025-11-02,trial,False,False
+35,Martins,ana-vitoria86@da.edu.br,Tecnologia,Pequena,BA,2024-03-22,ativo,False,False
+36,Rios Ltda.,henry-gabriel71@da.com,Saúde,Grande,BA,2024-04-25,ativo,False,False
+37,Andrade,grocha@pereira.com.br,Varejo,Grande,PA,2024-05-17,trial,False,False
+38,Moreira,valentim96@monteiro.com,Logística,Pequena,PE,2026-07-14,cancelado,False,False
+39,Mendonça,osouza@alves.com,Logística,Pequena,RS,2024-07-17,trial,False,False
+40,Garcia,costasarah@da.gov.br,Saúde,Pequena,SC,2024-04-19,ativo,False,False
+41,Santos - Ei,nvargas@alves.com,Educação,Grande,RJ,2025-07-18,trial,False,False
+42,Freitas E Filhos,emanuelly95@brito.com.br,Saúde,Média,SC,2025-02-02,trial,False,False
+43,Da Mata,cunhaluana@porto.br,Educação,Pequena,PE,2024-09-14,trial,False,False
+44,Da Luz S/A,ubarbosa@gomes.gov.br,Educação,Pequena,MG,2024-04-29,ativo,False,False
+45,Souza Pereira S.A.,,Saúde,Média,PR,2025-08-06,trial,True,False
+46,Cunha,vitorgomes@da.com.br,Tecnologia,Grande,BA,2026-03-21,ativo,False,False
+47,Garcia Barros Ltda.,gabrielteixeira@pacheco.com.br,Financeiro,Pequena,SC,2025-06-27,trial,False,False
+48,Pereira Abreu E Filhos,lda-costa@rezende.br,Logística,Grande,SP,2023-12-10,ativo,False,False
+49,Da Conceição S/A,emanuellyda-mata@rios.net,Logística,Grande,MG,2023-12-02,trial,False,False
+50,Marques Da Conceição S.A.,ycirino@costa.org,Saúde,Pequena,SC,2026-08-16,trial,False,False
+51,Vargas Ltda.,xaragao@sampaio.com.br,Varejo,Média,SP,2024-04-14,ativo,False,False
+52,Monteiro Moreira - Ei,antonio37@barbosa.com.br,Educação,Grande,PE,2024-07-01,cancelado,False,False
+53,Freitas,emanuelly72@cirino.org,Saúde,Pequena,CE,2026-02-17,ativo,False,False
+54,Rocha,macedoclarice@cavalcanti.com,Tecnologia,Média,CE,2024-04-13,trial,False,False
+55,Fogaça - Ei,caleb74@novais.br,Saúde,Média,PE,2025-11-23,trial,False,False
+56,Pacheco,carlos-eduardoda-mata@nunes.com,Educação,Pequena,SC,2026-05-29,cancelado,False,False
+57,Silva Das Neves E Filhos,vsiqueira@siqueira.br,Saúde,Pequena,CE,2024-03-08,cancelado,False,False
+58,Da Cruz Nascimento - Me,milena83@moreira.com,Educação,Pequena,RJ,2026-05-03,trial,False,False
+59,Casa Grande Camargo S.A.,luiza19@camargo.org,Saúde,Grande,PR,2025-06-28,ativo,False,False
+60,Azevedo - Me,arthur-gabriel26@garcia.br,Educação,Grande,BA,2026-08-28,cancelado,False,False
+61,Pastor Silveira - Me,amontenegro@mendonca.net,Logística,Pequena,SP,2024-09-22,cancelado,False,False
+62,Araújo,luiz-henrique97@lima.com.br,Financeiro,Grande,PA,2026-01-05,trial,False,True
+63,Moreira,nascimentojosue@costela.com.br,Saúde,Pequena,RS,2026-08-29,ativo,False,False
+64,Machado,,Varejo,Grande,SP,2024-02-29,trial,True,False
+65,Ferreira,gabrielmartins@alves.edu.br,Tecnologia,Média,SC,2025-10-03,ativo,False,False
+66,Viana S.A.,gael27@marques.org,Educação,Pequena,BA,2024-06-29,cancelado,False,False
+67,Marques Da Luz S.A.,rafaela41@pacheco.com.br,Saúde,Grande,RS,2023-11-16,cancelado,False,False
+68,Lopes,,Varejo,Grande,PR,2024-02-05,trial,True,False
+69,Mendonça,sophia33@gomes.gov.br,Financeiro,Grande,MG,2026-07-15,ativo,False,False
+70,Almeida,yda-paz@lopes.com,Varejo,Grande,SC,2024-05-15,cancelado,False,False
+71,Freitas Lopes Ltda.,ana-julia39@da.com.br,Financeiro,Grande,PA,2025-10-06,ativo,False,True
+72,Castro,guerramaria-sophia@brito.com,Varejo,Grande,BA,2025-09-16,trial,False,False
+73,Da Mata Da Conceição - Ei,ana-juliacardoso@ramos.com.br,Varejo,Média,SP,2024-12-21,ativo,False,False
+74,Cirino Leão - Ei,kamillynovais@abreu.com,Tecnologia,Grande,BA,2023-10-09,trial,False,False
+75,Araújo,nascimentoheloisa@cassiano.gov.br,Varejo,Média,BA,2024-12-05,cancelado,False,False
+76,Cardoso,domviana@fonseca.edu.br,Financeiro,Grande,PE,2024-01-30,trial,False,False
+77,Peixoto,diego40@garcia.com.br,Educação,Grande,CE,2025-08-08,trial,False,False
+78,Da Cunha - Me,isispereira@das.br,Tecnologia,Média,RS,2024-10-06,ativo,False,False
+79,Gomes Rodrigues - Me,maria-lizcarvalho@mendonca.gov.br,Varejo,Grande,BA,2026-01-01,ativo,False,True
+80,Borges E Filhos,oliveiraanthony@ramos.org,Saúde,Pequena,RJ,2026-04-03,trial,False,False
+81,Aragão S.A.,ana-luizaaragao@silva.br,Saúde,Média,CE,2026-09-07,cancelado,False,True
+82,Melo Rezende - Me,matteo44@vieira.gov.br,Varejo,Média,PA,2024-09-18,ativo,False,False
+83,Peixoto,costafrancisco@viana.com.br,Varejo,Grande,PR,2023-09-28,cancelado,False,False
+84,Pinto Castro - Me,sara62@moreira.com,Saúde,Grande,SP,2024-12-26,trial,False,False
+85,Casa Grande,igor75@vargas.com,Educação,Pequena,BA,2024-12-08,ativo,False,False
+86,Barbosa Santos S.A.,cguerra@da.br,Varejo,Média,PR,2026-02-11,cancelado,False,False
+87,Novais Macedo S.A.,renan57@rodrigues.com,Logística,Grande,RJ,2024-04-13,ativo,False,False
+88,Araújo S/A,bda-mota@azevedo.br,Logística,Pequena,RS,2026-03-09,cancelado,False,False
+89,Dias - Me,luiz-fernando76@sampaio.net,Financeiro,Média,CE,2025-11-27,ativo,False,False
+90,Casa Grande Camargo Ltda.,elisamonteiro@santos.com.br,Varejo,Média,MG,2025-04-12,cancelado,False,False
+91,Borges Dias S/A,wda-cruz@duarte.org,Educação,Pequena,CE,2026-08-21,cancelado,False,False
+92,Gonçalves - Me,smarques@farias.com,Tecnologia,Grande,BA,2026-09-18,trial,False,False
+93,Duarte,qcavalcante@vargas.com.br,Logística,Média,PE,2024-09-30,trial,False,False
+94,Nogueira,goncalvesguilherme@da.edu.br,Varejo,Pequena,RS,2025-05-31,ativo,False,False
+95,Brito E Filhos,thomas81@pimenta.org,Tecnologia,Grande,MG,2026-07-28,ativo,False,False
+96,Da Rocha Novais Ltda.,nleao@rocha.org,Saúde,Grande,CE,2023-10-30,trial,False,False
+97,Oliveira S/A,bianca63@sales.gov.br,Tecnologia,Média,BA,2026-06-04,trial,False,False
+98,Novais S/A,novaisleticia@siqueira.com.br,Tecnologia,Média,PA,2025-09-25,cancelado,False,False
+99,Gomes,siqueiradom@pimenta.com,Tecnologia,Grande,BA,2026-07-29,cancelado,False,False
+100,Da Rosa Freitas E Filhos,luanvargas@moraes.com,Varejo,Média,SP,2025-06-26,cancelado,False,False
+101,Oliveira Pastor - Ei,eoliveira@da.com.br,Varejo,Média,MG,2024-04-27,trial,False,False
+102,Vieira Da Cunha Ltda.,aazevedo@siqueira.com,Saúde,Média,PE,2024-01-25,trial,False,False
+103,Farias,diogoalbuquerque@abreu.com.br,Varejo,Pequena,PR,2024-09-30,ativo,False,False
+104,Porto,heloisanovaes@teixeira.com.br,Saúde,Pequena,CE,2026-06-11,trial,False,False
+105,Garcia,gabriellycastro@martins.br,Logística,Média,PA,2025-10-21,cancelado,False,False
+106,Moreira,,Educação,Pequena,SP,2025-03-08,cancelado,True,False
+107,Machado,ayla54@macedo.com,Varejo,Pequena,RJ,2026-03-26,cancelado,False,False
+108,Sampaio Montenegro - Me,liambrito@almeida.com.br,Saúde,Grande,CE,2026-06-26,trial,False,False
+109,Andrade - Me,albuquerqueana-livia@freitas.br,Varejo,Pequena,CE,2026-07-09,ativo,False,False
+110,Peixoto S/A,jcamara@da.org,Tecnologia,Média,RJ,2025-08-13,ativo,False,False
+111,Pinto Abreu S.A.,samuel83@rezende.com,Educação,Média,RJ,2025-06-13,cancelado,False,True
+112,Macedo,nascimentomathias@vieira.com,Financeiro,Média,PA,2026-01-16,cancelado,False,False
+113,Alves Gonçalves E Filhos,rebecavasconcelos@costa.com,Logística,Média,RJ,2025-10-27,ativo,False,False
+114,Leão,joanamonteiro@monteiro.gov.br,Financeiro,Grande,MG,2024-12-03,cancelado,False,False
+115,Gomes,,Saúde,Pequena,MG,2025-11-18,ativo,True,False
+116,Pimenta,bernardorios@castro.edu.br,Financeiro,Média,RS,2024-02-28,ativo,False,False
+117,Da Mata,,Educação,Grande,BA,2026-04-23,ativo,True,False
+118,Mendes Albuquerque - Me,pguerra@nascimento.edu.br,Tecnologia,Média,PA,2024-12-18,trial,False,False
+119,Cassiano Araújo - Ei,vitor54@azevedo.br,Logística,Grande,RS,2024-01-26,trial,False,False
+120,Ribeiro Ltda.,brenda22@da.gov.br,Financeiro,Pequena,PA,2025-12-24,ativo,False,False
+121,Da Mota Macedo Ltda.,montenegroraul@garcia.com.br,Financeiro,Pequena,BA,2025-03-20,trial,False,False
+122,Nascimento Silveira - Ei,novaisana-clara@monteiro.com,Tecnologia,Média,SC,2023-10-26,trial,False,False
+123,Rocha,isadora78@mendonca.net,Logística,Pequena,PE,2024-08-06,ativo,False,False
+124,Sousa,nathanguerra@castro.br,Saúde,Pequena,MG,2025-04-05,ativo,False,False
+125,Cassiano,anthony-gabrielda-cunha@porto.com,Varejo,Pequena,MG,2024-10-11,trial,False,False
+126,Ribeiro,thiagosousa@sales.com,Financeiro,Pequena,RS,2026-03-01,trial,False,False
+127,Nascimento Melo - Ei,igorda-mota@oliveira.br,Educação,Pequena,SP,2024-10-09,ativo,False,False
+128,Cardoso Nascimento - Ei,luaracardoso@aragao.com,Tecnologia,Média,PE,2025-05-14,ativo,False,False
+129,Da Cruz,guerrarael@alves.br,Logística,Média,MG,2024-09-23,ativo,False,False
+130,Vargas Barbosa S.A.,gabreu@cavalcanti.br,Educação,Média,RS,2026-04-21,ativo,False,False
+131,Costa,sazevedo@martins.edu.br,Varejo,Grande,BA,2024-09-30,cancelado,False,False
+132,Moreira E Filhos,daniloborges@sampaio.edu.br,Educação,Pequena,PE,2025-11-10,ativo,False,False
+133,Dias,,Tecnologia,Média,PR,2026-07-24,trial,True,False
+134,Carvalho,costanina@da.edu.br,Tecnologia,Média,PE,2024-03-26,ativo,False,False
+135,Silva S/A,sbrito@vargas.br,Varejo,Grande,SC,2024-09-08,cancelado,False,False
+136,Gonçalves Ltda.,qcampos@cassiano.com,Varejo,Grande,SP,2026-01-27,trial,False,False
+137,Ribeiro,marceloda-luz@cunha.com,Educação,Média,SC,2026-09-20,ativo,False,False
+138,Siqueira E Filhos,ulopes@borges.org,Logística,Pequena,BA,2025-03-19,cancelado,False,False
+139,Castro,dsa@freitas.com,Saúde,Pequena,PA,2026-08-12,ativo,False,False
+140,Sampaio Almeida S/A,dcorreia@pastor.gov.br,Saúde,Pequena,PE,2024-11-14,ativo,False,True
+141,Carvalho Ltda.,mayasiqueira@carvalho.com.br,Varejo,Média,RS,2023-12-26,trial,False,False
+142,Cardoso - Me,hsampaio@araujo.com,Tecnologia,Pequena,RJ,2026-07-03,ativo,False,False
+143,Da Rocha,novaesarthur-gabriel@da.com,Saúde,Grande,SP,2024-10-01,ativo,False,False
+144,Duarte,cmoraes@sales.gov.br,Financeiro,Pequena,RS,2024-04-24,trial,False,False
+145,Borges,raul55@novais.com.br,Financeiro,Grande,BA,2024-11-22,cancelado,False,False
+146,Da Mota,maria-juliaaraujo@azevedo.com,Financeiro,Grande,BA,2024-01-17,cancelado,False,False
+147,Oliveira Machado - Ei,ebarros@moraes.com.br,Tecnologia,Média,RS,2024-03-30,trial,False,False
+148,Teixeira,eloa59@correia.gov.br,Logística,Média,PE,2025-05-07,ativo,False,False
+149,Moreira Da Rocha - Ei,thiago03@moura.br,Tecnologia,Grande,BA,2024-10-18,ativo,False,False
+150,Da Cruz,castrogabriela@moreira.br,Tecnologia,Pequena,SP,2026-07-26,ativo,False,False
+151,Costa,nrodrigues@mendes.br,Tecnologia,Pequena,CE,2025-01-22,ativo,False,False
+152,Rios,,Educação,Pequena,BA,2024-03-16,cancelado,True,False
+153,Silva Azevedo Ltda.,silvaisadora@da.com,Logística,Grande,SP,2024-11-18,trial,False,False
+154,Almeida Ltda.,paulo06@da.com.br,Financeiro,Pequena,PE,2025-10-17,trial,False,False
+155,Brito,,Logística,Pequena,RS,2026-08-24,trial,True,False
+156,Freitas,joaquimmartins@montenegro.edu.br,Saúde,Pequena,RS,2024-09-21,cancelado,False,False
+157,Sá - Me,,Logística,Grande,PA,2024-07-23,ativo,True,False
+158,Peixoto Da Costa Ltda.,maria-sophiaabreu@cavalcanti.br,Logística,Média,RJ,2024-10-14,cancelado,False,False
+159,Cunha Da Rosa - Me,vitoriarodrigues@campos.edu.br,Financeiro,Média,MG,2024-02-22,cancelado,False,False
+160,Garcia - Me,camarakamilly@farias.net,Educação,Pequena,SP,2023-11-19,cancelado,False,False
+161,Vasconcelos,leaomanuela@vasconcelos.com.br,Educação,Grande,RJ,2025-09-02,cancelado,False,False
+162,Leão Da Rosa S.A.,mathias58@melo.org,Educação,Média,PR,2024-05-03,ativo,False,False
+163,Barros,emendonca@monteiro.br,Saúde,Pequena,BA,2024-03-28,trial,False,False
+164,Souza,,Financeiro,Média,SC,2024-03-22,ativo,True,False
+165,Da Mota,davipereira@da.com.br,Educação,Grande,RJ,2025-01-08,trial,False,False
+166,Mendes - Me,vasconcelosjose-pedro@da.gov.br,Saúde,Pequena,PA,2023-10-03,cancelado,False,False
+167,Borges,ribeirofelipe@da.gov.br,Financeiro,Média,CE,2025-02-25,cancelado,False,False
+168,Cirino,pcosta@porto.gov.br,Educação,Pequena,PR,2023-09-28,trial,False,False
+169,Fogaça - Ei,peixotorael@da.br,Varejo,Grande,RS,2026-01-11,cancelado,False,True
+170,Nascimento,marcela44@guerra.br,Saúde,Pequena,RJ,2025-12-28,cancelado,False,False
+171,Fonseca - Ei,nrios@rios.gov.br,Varejo,Média,PA,2025-06-01,cancelado,False,False
+172,Lima Mendonça - Me,gabriellycardoso@vasconcelos.gov.br,Logística,Média,PA,2025-03-25,cancelado,False,False
+173,Moraes - Ei,aylla54@monteiro.com.br,Varejo,Pequena,PA,2024-09-21,trial,False,False
+174,Azevedo,trios@da.com.br,Logística,Grande,MG,2025-08-29,trial,False,False
+175,Brito Sales - Me,pedro-henriquearagao@da.br,Educação,Média,BA,2023-11-25,trial,False,False
+176,Santos Câmara E Filhos,mmendonca@camara.com.br,Financeiro,Pequena,PE,2025-02-10,trial,False,False
+177,Nascimento,ana-vitoriacassiano@sa.com.br,Financeiro,Grande,CE,2024-08-10,trial,False,False
+178,Garcia,isabelly75@farias.br,Logística,Grande,SP,2025-05-07,trial,False,False
+179,Machado,,Logística,Grande,PA,2024-05-07,trial,True,False
+180,Brito S.A.,marina33@leao.com,Tecnologia,Média,BA,2024-09-08,trial,False,False
+181,Sousa,,Varejo,Pequena,RJ,2024-05-23,trial,True,False
+182,Câmara S.A.,henry16@goncalves.net,Logística,Pequena,SP,2026-02-18,cancelado,False,False
+183,Pimenta,araujodavi@cavalcanti.com,Educação,Pequena,PA,2024-07-20,ativo,False,False
+184,Lima Cunha S/A,,Varejo,Pequena,PA,2024-03-09,ativo,True,False
+185,Pastor,das-nevesana-carolina@barros.gov.br,Financeiro,Média,BA,2024-03-28,ativo,False,False
+186,Souza S.A.,ana-vitoria61@souza.com,Financeiro,Grande,RJ,2025-08-07,ativo,False,False
+187,Teixeira,xsilva@farias.com.br,Varejo,Média,MG,2026-05-24,trial,False,False
+188,Fonseca,isis32@viana.gov.br,Tecnologia,Grande,RJ,2025-04-05,ativo,False,False
+189,Camargo,ysales@peixoto.com.br,Educação,Pequena,RS,2026-05-12,ativo,False,False
+190,Ribeiro,cavalcanteayla@fogaca.com.br,Logística,Média,MG,2024-11-10,ativo,False,False
+191,Da Mata,asafe51@vieira.com.br,Logística,Pequena,BA,2024-03-29,trial,False,False
+192,Porto - Me,xnascimento@vieira.edu.br,Saúde,Média,PE,2026-01-12,ativo,False,False
+193,Mendonça Rocha S.A.,,Financeiro,Grande,PR,2026-03-06,ativo,True,False
+194,Siqueira,marquesliz@pires.edu.br,Varejo,Média,PR,2024-10-17,trial,False,False
+195,Gomes,joaosilveira@freitas.org,Financeiro,Média,SC,2025-04-03,cancelado,False,False
+196,Rezende,otavio07@carvalho.gov.br,Varejo,Média,PR,2024-10-05,cancelado,False,False
+197,Abreu,eduarda22@lima.br,Tecnologia,Grande,CE,2024-07-18,trial,False,False
+198,Souza,saisabelly@cassiano.com,Varejo,Média,RJ,2024-10-10,ativo,False,False
+199,Correia,sophiamartins@oliveira.com.br,Tecnologia,Média,SP,2024-10-31,cancelado,False,False
+200,Da Cruz - Ei,halbuquerque@porto.org,Tecnologia,Pequena,RS,2024-10-23,cancelado,False,False
+201,Gonçalves S.A.,pnunes@garcia.com,Educação,Grande,CE,2024-07-14,trial,False,False
+202,Peixoto Ferreira Ltda.,ppeixoto@ferreira.br,Varejo,Média,PA,2025-10-21,trial,False,False
+203,Freitas Ltda.,jda-mota@moreira.com,Saúde,Grande,RS,2023-09-27,cancelado,False,False
+204,Cavalcante Lima E Filhos,jose-miguelcirino@da.com.br,Financeiro,Pequena,CE,2026-08-04,ativo,False,False
+205,Santos,ofreitas@santos.com.br,Financeiro,Grande,SC,2024-11-30,trial,False,False
+206,Silveira,jesusalana@camara.com,Tecnologia,Grande,SP,2025-06-08,trial,False,False
+207,Vieira,ocavalcanti@sousa.com,Financeiro,Pequena,SC,2025-04-14,ativo,False,False
+208,Da Cunha - Ei,ana-beatriz50@araujo.com,Logística,Média,RS,2024-10-24,trial,False,False
+209,Melo,juan19@farias.com.br,Varejo,Pequena,CE,2026-01-14,cancelado,False,False
+210,Jesus,pnogueira@alves.com.br,Logística,Grande,BA,2026-02-07,trial,False,False
+211,Alves Mendes - Ei,melosarah@souza.br,Varejo,Média,BA,2025-07-19,cancelado,False,False
+212,Costa,luiz-gustavo55@monteiro.org,Logística,Grande,CE,2023-11-28,cancelado,False,False
+213,Novaes,maria-luiza01@barros.com.br,Educação,Média,MG,2025-05-09,cancelado,False,False
+214,Ribeiro Pereira - Me,siqueiraisaac@farias.com.br,Saúde,Pequena,RJ,2025-12-26,cancelado,False,False
+215,Cassiano E Filhos,,Saúde,Média,SP,2024-12-04,trial,True,False
+216,Oliveira,malbuquerque@silveira.br,Saúde,Média,PA,2026-04-01,cancelado,False,False
+217,Da Luz Ltda.,diegomelo@cardoso.com,Financeiro,Pequena,PA,2024-04-18,cancelado,False,False
+218,Nogueira S/A,vargasleandro@pastor.edu.br,Educação,Grande,RS,2024-02-03,ativo,False,False
+219,Da Luz,lopesasafe@brito.com.br,Varejo,Grande,RJ,2024-02-21,trial,False,False
+220,Andrade Peixoto S.A.,isabellafarias@silveira.br,Saúde,Grande,PA,2024-07-22,trial,False,False
+221,Marques - Me,lrodrigues@nunes.edu.br,Tecnologia,Pequena,BA,2024-09-01,ativo,False,False
+222,Duarte,biancaandrade@da.com,Saúde,Pequena,PA,2025-06-13,ativo,False,True
+223,Pinto,davi-lucca79@carvalho.br,Saúde,Grande,RJ,2023-10-30,trial,False,False
+224,Pinto,usantos@aragao.br,Logística,Grande,PE,2025-07-13,ativo,False,False
+225,Marques,bvieira@guerra.br,Saúde,Grande,CE,2024-10-16,ativo,False,False
+226,Moreira Guerra S.A.,marcos-viniciuscamargo@pastor.com.br,Varejo,Pequena,RS,2023-10-05,cancelado,False,False
+227,Azevedo,luiz-otaviosousa@nunes.br,Tecnologia,Grande,SP,2026-07-18,cancelado,False,False
+228,Monteiro,arthur-gabriel19@caldeira.br,Financeiro,Pequena,BA,2023-11-08,cancelado,False,False
+229,Vasconcelos,nicolasazevedo@siqueira.com,Logística,Grande,BA,2023-12-14,trial,False,False
+230,Teixeira Ltda.,natalia12@cunha.com.br,Logística,Grande,PA,2025-07-29,cancelado,False,False
+231,Vasconcelos,yazevedo@silveira.edu.br,Saúde,Média,BA,2024-12-24,ativo,False,False
+232,Pinto Da Mata S/A,erick38@rezende.com,Educação,Grande,SC,2025-04-27,cancelado,False,False
+233,Da Cruz S/A,diego12@sousa.gov.br,Tecnologia,Pequena,RS,2025-03-16,ativo,False,False
+234,Sousa,wcosta@vieira.com.br,Educação,Média,CE,2025-10-02,ativo,False,False
+235,Vargas,ramosigor@barbosa.br,Tecnologia,Média,PE,2024-11-19,cancelado,False,False
+236,Moraes,lopesanthony-gabriel@castro.com,Varejo,Grande,PA,2026-08-25,cancelado,False,False
+237,Caldeira - Ei,duartehenry-gabriel@ferreira.com,Saúde,Média,SP,2024-12-11,cancelado,False,False
+238,Da Cunha,ramosayla@leao.com,Educação,Grande,BA,2024-09-15,ativo,False,False
+239,Aragão,ravyoliveira@novaes.com.br,Saúde,Pequena,RS,2025-05-24,ativo,False,False
+240,Aragão Sales Ltda.,uda-cunha@nunes.gov.br,Educação,Pequena,RS,2023-12-19,ativo,False,False
+241,Mendonça,larissada-paz@da.br,Varejo,Grande,PE,2026-08-20,trial,False,False
+242,Leão,joao-vitor14@da.gov.br,Logística,Grande,PR,2025-09-06,trial,False,False
+243,Costela E Filhos,correialuiza@pacheco.org,Educação,Média,SC,2026-01-06,trial,False,False
+244,Fernandes Da Cruz Ltda.,,Financeiro,Média,SP,2025-12-12,trial,True,False
+245,Da Conceição,rebeca40@ramos.com,Saúde,Média,PA,2026-02-26,trial,False,False
+246,Farias E Filhos,gviana@casa.br,Financeiro,Grande,PE,2025-09-16,ativo,False,False
+247,Borges S.A.,maysarodrigues@ferreira.com.br,Varejo,Média,MG,2026-07-17,trial,False,False
+248,Pinto,enascimento@monteiro.com,Saúde,Pequena,SC,2025-07-29,trial,False,False
+249,Albuquerque Cavalcante - Me,sousaluigi@moraes.gov.br,Logística,Pequena,CE,2023-10-19,cancelado,False,False
+250,Almeida,lucascardoso@sales.net,Educação,Média,RJ,2026-06-13,ativo,False,False
+251,Monteiro,biancaandrade@da.com,Saúde,Média,RS,2024-01-18,trial,False,True
+252,Rezende - Me,montenegroalana@cavalcante.com.br,Saúde,Grande,MG,2024-06-15,cancelado,False,False
+253,Costela,emartins@farias.com.br,Varejo,Pequena,RS,2026-03-06,trial,False,False
+254,Silveira S.A.,,Varejo,Pequena,BA,2024-05-04,trial,True,False
+255,Ramos Ltda.,,Varejo,Pequena,MG,2024-04-02,cancelado,True,False
+256,Correia S/A,,Logística,Grande,CE,2024-07-05,trial,True,False
+257,Siqueira,ana-liviapeixoto@da.com.br,Tecnologia,Grande,CE,2025-09-13,cancelado,False,False
+258,Sá Viana - Ei,nicole12@machado.br,Logística,Pequena,RS,2024-07-04,cancelado,False,False
+259,Oliveira Gomes E Filhos,josueabreu@rios.edu.br,Financeiro,Pequena,RS,2025-05-08,trial,False,False
+260,Rocha,lorenzocarvalho@camargo.com,Logística,Grande,SP,2026-02-18,ativo,False,False
+261,Pires - Ei,juliaaragao@pires.gov.br,Tecnologia,Grande,RS,2025-12-01,ativo,False,False
+262,Teixeira,benicio18@da.com,Financeiro,Grande,CE,2024-02-17,cancelado,False,False
+263,Barros,ferreiramariah@fogaca.gov.br,Logística,Pequena,MG,2026-05-29,cancelado,False,False
+264,Moreira S.A.,elisarezende@fernandes.br,Varejo,Média,PE,2026-06-21,cancelado,False,False
+265,Lopes S.A.,omelo@camargo.br,Educação,Grande,RJ,2026-04-25,ativo,False,False
+266,Peixoto - Me,maria-eduarda13@nogueira.com,Saúde,Grande,MG,2025-05-06,cancelado,False,False
+267,Barros Martins - Ei,ana-julia72@aparecida.com.br,Varejo,Grande,PE,2024-01-06,cancelado,False,False
+268,Rezende S.A.,eloa48@costa.com.br,Logística,Grande,PR,2025-08-20,ativo,False,False
+269,Souza Da Conceição Ltda.,mendoncapedro-lucas@castro.com.br,Logística,Pequena,CE,2024-04-08,trial,False,False
+270,Pereira Teixeira - Me,vasconceloshelena@araujo.com.br,Logística,Média,RS,2025-05-13,cancelado,False,False
+271,Machado,klima@lima.org,Educação,Pequena,MG,2025-04-21,trial,False,False
+272,Nascimento,das-nevesmaria-julia@almeida.net,Financeiro,Média,PE,2023-12-08,ativo,False,False
+273,Fonseca Alves S.A.,da-conceicaosabrina@da.com.br,Educação,Pequena,PA,2026-07-04,trial,False,False
+274,Aragão Da Cunha S/A,rbarbosa@sampaio.com,Tecnologia,Média,RJ,2023-12-19,ativo,False,False
+275,Sampaio,saraferreira@siqueira.net,Logística,Grande,BA,2025-11-01,ativo,False,False
+276,Carvalho - Me,maria-clara47@duarte.com,Logística,Grande,SC,2026-05-27,ativo,False,False
+277,Camargo Martins Ltda.,novaesmanuella@castro.gov.br,Financeiro,Média,BA,2026-09-24,trial,False,False
+278,Sales Marques - Ei,,Saúde,Grande,RJ,2025-01-24,ativo,True,False
+279,Silveira E Filhos,montenegrovinicius@nascimento.org,Financeiro,Grande,RS,2024-03-23,ativo,False,False
+280,Souza,anna-lizmontenegro@da.com,Varejo,Grande,PA,2026-08-19,cancelado,False,False
+281,Silva,,Saúde,Média,PR,2024-07-09,cancelado,True,False
+282,Fogaça E Filhos,breno80@cassiano.org,Financeiro,Grande,PA,2025-12-05,cancelado,False,False
+283,Nogueira S/A,cassianomilena@siqueira.com.br,Financeiro,Grande,SC,2026-04-26,ativo,False,False
+284,Dias E Filhos,,Educação,Média,RS,2026-03-16,trial,True,False
+285,Santos Ltda.,fborges@da.br,Tecnologia,Grande,PE,2024-05-10,trial,False,False
+286,Da Conceição,leaoana-sophia@moraes.br,Saúde,Grande,BA,2025-12-11,cancelado,False,False
+287,Sales - Ei,isaque35@da.com.br,Logística,Média,BA,2025-08-10,cancelado,False,False
+288,Novaes,bella35@campos.gov.br,Saúde,Média,BA,2024-12-13,ativo,False,False
+289,Ferreira,monteiroapollo@pires.com,Saúde,Grande,MG,2024-01-06,cancelado,False,False
+290,Carvalho Azevedo S/A,arthur-gabriel07@mendonca.edu.br,Tecnologia,Grande,CE,2025-02-01,cancelado,False,False
+291,Cunha,heloisa83@casa.org,Tecnologia,Grande,MG,2024-06-26,ativo,False,False
+292,Borges,luiz-miguel03@pimenta.com.br,Tecnologia,Grande,MG,2026-03-11,cancelado,False,False
+293,Nogueira - Me,pintomarcela@monteiro.com,Varejo,Média,PE,2024-01-14,trial,False,False
+294,Moraes,duartemaria-flor@ramos.com,Logística,Grande,PR,2024-03-06,ativo,False,False
+295,Da Rosa S/A,helenapimenta@alves.org,Saúde,Grande,MG,2025-12-20,ativo,False,False
+296,Castro,hpimenta@vasconcelos.org,Financeiro,Grande,MG,2025-07-16,trial,False,False
+297,Das Neves S/A,psa@marques.br,Educação,Média,MG,2025-08-07,ativo,False,False
+298,Macedo - Ei,olivia18@brito.com,Saúde,Pequena,MG,2026-08-13,trial,False,False
+299,Mendes Pimenta - Me,vinicius34@machado.net,Logística,Grande,PA,2024-08-28,trial,False,False
+300,Novais,emendes@alves.com.br,Tecnologia,Média,SP,2025-02-26,ativo,False,False
+301,Porto Pereira Ltda.,unovais@silva.com,Varejo,Média,PE,2024-09-30,trial,False,False
+302,Ribeiro,ccunha@sales.br,Saúde,Pequena,PR,2023-11-01,trial,False,False
+303,Lima Ltda.,correiapietra@da.com.br,Logística,Grande,RJ,2025-05-10,ativo,False,False
+304,Siqueira Da Cruz - Me,tdas-neves@almeida.br,Educação,Média,PR,2024-11-15,cancelado,False,False
+305,Duarte,lunna80@viana.com,Tecnologia,Média,RJ,2025-09-02,trial,False,False
+306,Moura,isabelly55@brito.com,Financeiro,Média,PA,2026-07-06,trial,False,False
+307,Moreira,fsampaio@cirino.com,Logística,Grande,BA,2026-03-13,cancelado,False,False
+308,Pinto,nathan87@jesus.br,Tecnologia,Média,BA,2025-10-13,trial,False,False
+309,Borges Rocha S/A,nicolas21@pacheco.org,Saúde,Média,BA,2026-08-08,trial,False,False
+310,Lima Gonçalves E Filhos,hcosta@souza.com.br,Logística,Pequena,SC,2024-08-31,trial,False,False
+311,Pastor - Me,cavalcantegustavo-henrique@montenegro.br,Saúde,Grande,CE,2024-12-20,trial,False,False
+312,Jesus Melo - Me,davi-luccagomes@sousa.edu.br,Saúde,Pequena,RJ,2025-07-04,ativo,False,False
+313,Leão S/A,josue26@porto.com.br,Financeiro,Grande,SP,2025-06-12,cancelado,False,False
+314,Da Rocha,gleao@cirino.br,Tecnologia,Média,RJ,2024-10-16,ativo,False,False
+315,Pastor,maria-juliafonseca@campos.net,Varejo,Grande,PE,2025-11-29,ativo,False,False
+316,Da Mata Farias Ltda.,joao-miguel82@pereira.com.br,Financeiro,Média,CE,2024-06-22,ativo,False,False
+317,Da Mata,camargoisaac@lopes.gov.br,Logística,Média,CE,2024-01-30,cancelado,False,False
+318,Da Costa,dda-costa@albuquerque.com,Logística,Média,CE,2025-08-02,ativo,False,False
+319,Caldeira,almeidayago@garcia.com,Educação,Média,RJ,2025-08-17,trial,False,False
+320,Mendes,lararodrigues@marques.edu.br,Varejo,Pequena,CE,2024-02-16,ativo,False,False
+321,Almeida,da-motaana-vitoria@gomes.br,Financeiro,Média,BA,2025-11-06,ativo,False,False
+322,Moreira,dom51@barbosa.gov.br,Varejo,Grande,SP,2024-02-10,trial,False,False
+323,Pimenta Pereira - Me,enunes@siqueira.org,Saúde,Grande,RS,2026-07-19,cancelado,False,False
+324,Melo,igornovaes@da.net,Financeiro,Média,BA,2026-01-26,trial,False,False
+325,Monteiro,alvesgabriela@costela.br,Tecnologia,Grande,PE,2024-12-22,trial,False,False
+326,Porto Fonseca E Filhos,abreuluara@aragao.br,Logística,Média,PA,2023-12-18,trial,False,False
+327,Viana,freitasheloisa@almeida.gov.br,Tecnologia,Pequena,RS,2024-11-26,cancelado,False,False
+328,Marques,ocamargo@farias.edu.br,Financeiro,Média,PR,2025-12-13,trial,False,False
+329,Nogueira - Ei,peixotorael@da.br,Tecnologia,Pequena,RS,2023-10-04,cancelado,False,True
+330,Mendonça - Ei,da-rochatheo@da.gov.br,Varejo,Média,PA,2025-10-04,ativo,False,False
+331,Castro - Ei,fogacaluiz-gustavo@rocha.com.br,Financeiro,Grande,SP,2025-12-29,ativo,False,False
+332,Leão - Me,maya09@campos.br,Logística,Pequena,PE,2026-03-26,cancelado,False,False
+333,Pacheco Dias S/A,znogueira@ribeiro.org,Financeiro,Grande,PE,2024-09-07,ativo,False,False
+334,Pastor S/A,eloaazevedo@casa.com,Tecnologia,Grande,RJ,2024-08-08,trial,False,False
+335,Rezende Da Rosa - Me,vsilva@nogueira.net,Educação,Média,BA,2025-08-16,trial,False,False
+336,Ramos,qcardoso@brito.br,Educação,Grande,RS,2026-09-13,trial,False,False
+337,Freitas Oliveira Ltda.,onunes@mendonca.br,Financeiro,Média,PE,2024-09-29,ativo,False,False
+338,Pereira,da-costaallana@da.edu.br,Varejo,Média,PA,2024-02-05,trial,False,False
+339,Peixoto Fonseca - Ei,arthur81@pereira.com,Logística,Grande,PR,2025-04-03,ativo,False,False
+340,Silva,gustavo40@albuquerque.com,Logística,Pequena,SC,2024-06-10,cancelado,False,False
+341,Guerra Fonseca S/A,qabreu@silveira.edu.br,Financeiro,Pequena,PE,2026-05-22,cancelado,False,False
+342,Da Mota Fernandes S/A,manuelacunha@machado.com.br,Tecnologia,Grande,PE,2024-08-25,cancelado,False,False
+343,Melo Pereira S/A,mateus78@vargas.gov.br,Saúde,Média,SP,2026-03-06,cancelado,False,False
+344,Nunes - Ei,isaac62@cassiano.gov.br,Varejo,Média,PR,2023-10-22,trial,False,False
+345,Silveira Barbosa E Filhos,ayllapastor@alves.com,Logística,Média,PE,2023-11-04,cancelado,False,True
+346,Abreu S/A,mayapastor@pastor.net,Educação,Grande,CE,2024-01-09,ativo,False,False
+347,Ferreira,da-rochapedro-miguel@cavalcanti.com.br,Tecnologia,Média,PA,2025-06-02,ativo,False,False
+348,Pacheco S.A.,ecamara@rezende.br,Educação,Pequena,MG,2024-04-25,trial,False,False
+349,Martins,da-luzbryan@fonseca.edu.br,Educação,Média,SC,2025-01-01,cancelado,False,False
+350,Costa,vitor-hugolima@souza.com.br,Financeiro,Grande,SP,2025-01-14,ativo,False,False
+351,Porto Lima Ltda.,bda-conceicao@teixeira.edu.br,Varejo,Média,PR,2025-01-10,cancelado,False,False
+352,Peixoto Dias - Me,da-motamaria-flor@lopes.com.br,Financeiro,Grande,SC,2023-11-14,trial,False,True
+353,Brito,bernardomacedo@da.br,Saúde,Grande,RJ,2024-05-20,cancelado,False,False
+354,Gomes S/A,nogueirabreno@campos.br,Saúde,Grande,BA,2024-07-28,ativo,False,False
+355,Macedo,saisis@martins.br,Saúde,Média,SC,2026-06-22,cancelado,False,False
+356,Pacheco S/A,da-rochaayla@pacheco.edu.br,Tecnologia,Média,SP,2026-04-26,cancelado,False,False
+357,Souza,castrobianca@das.edu.br,Financeiro,Média,BA,2024-09-23,cancelado,False,False
+358,Cassiano,,Saúde,Grande,PA,2025-08-09,trial,True,False
+359,Ramos - Me,ayllapastor@alves.com,Varejo,Grande,BA,2024-03-20,ativo,False,True
+360,Fogaça Nogueira Ltda.,cardosogael@marques.br,Logística,Grande,PR,2025-05-05,trial,False,False
+361,Novais Ltda.,enzo70@carvalho.br,Varejo,Pequena,PE,2024-04-26,trial,False,False
+362,Rios Da Luz E Filhos,viniciuspimenta@rocha.br,Tecnologia,Média,MG,2026-05-02,cancelado,False,True
+363,Azevedo Ltda.,maria-laura78@guerra.com.br,Tecnologia,Pequena,PA,2024-06-10,cancelado,False,False
+364,Novaes E Filhos,sousaluiz-fernando@mendes.gov.br,Logística,Grande,RJ,2025-06-12,trial,False,False
+365,Dias Correia - Me,joao-lucasmelo@novaes.com.br,Logística,Grande,RS,2026-06-27,cancelado,False,False
+366,Fernandes Da Cruz Ltda.,,Financeiro,Pequena,RJ,2024-10-29,ativo,True,False
+367,Teixeira,mpeixoto@freitas.com,Logística,Pequena,BA,2026-06-02,cancelado,False,False
+368,Nascimento E Filhos,vargasester@silveira.com,Educação,Média,SP,2024-06-06,cancelado,False,False
+369,Albuquerque Machado - Ei,nathan23@cavalcante.org,Tecnologia,Grande,RJ,2026-07-27,trial,False,False
+370,Macedo S/A,da-rochaigor@rocha.br,Logística,Média,PE,2024-10-22,trial,False,False
+371,Silveira,adias@goncalves.com.br,Educação,Grande,RJ,2024-11-15,cancelado,False,False
+372,Sales,benjamin98@vargas.gov.br,Financeiro,Grande,MG,2025-03-12,cancelado,False,False
+373,Monteiro S/A,raul43@das.com.br,Educação,Grande,CE,2026-07-23,cancelado,False,False
+374,Carvalho Nogueira S/A,bvasconcelos@lima.com.br,Saúde,Média,RJ,2026-08-09,trial,False,True
+375,Vargas,isis13@correia.br,Tecnologia,Média,PR,2026-03-24,ativo,False,False
+376,Da Costa Ltda.,brenda41@santos.br,Educação,Média,SC,2026-03-24,trial,False,False
+377,Casa Grande,,Logística,Pequena,SC,2024-01-16,trial,True,False
+378,Casa Grande,cavalcantefrancisco@vargas.com.br,Saúde,Média,SC,2025-01-06,cancelado,False,False
+379,Ribeiro,jesusnicolas@aragao.org,Saúde,Grande,MG,2024-09-23,cancelado,False,False
+380,Marques Gonçalves - Ei,raelcamara@alves.com.br,Financeiro,Média,RJ,2026-03-24,ativo,False,False
+381,Duarte,larissa25@leao.edu.br,Financeiro,Grande,PR,2026-04-21,trial,False,False
+382,Pacheco,sophieda-cunha@fogaca.com,Varejo,Grande,SC,2024-05-30,ativo,False,False
+383,Carvalho,nicolecirino@cassiano.br,Educação,Grande,MG,2026-02-08,cancelado,False,False
+384,Da Rosa,rafaelrodrigues@sampaio.br,Saúde,Pequena,MG,2025-12-30,trial,False,False
+385,Freitas,brunaazevedo@fogaca.com,Logística,Média,PR,2024-03-25,ativo,False,False
+386,Costela Silva - Me,ana-beatriz01@vieira.br,Financeiro,Grande,SP,2025-03-10,cancelado,False,False
+387,Cassiano Ltda.,salesisabel@caldeira.edu.br,Logística,Grande,MG,2026-08-15,ativo,False,False
+388,Cunha S/A,melissaribeiro@goncalves.gov.br,Saúde,Pequena,RS,2023-12-11,trial,False,False
+389,Ramos S.A.,sousacalebe@duarte.gov.br,Saúde,Pequena,BA,2025-09-28,ativo,False,False
+390,Pereira S.A.,,Saúde,Pequena,SP,2025-11-03,cancelado,True,False
+391,Gonçalves,luiz-henrique97@lima.com.br,Saúde,Pequena,MG,2023-11-04,ativo,False,True
+392,Novais,pedro-lucas53@jesus.com,Logística,Pequena,RS,2024-06-13,trial,False,False
+393,Souza - Me,liviagarcia@pimenta.org,Educação,Pequena,PE,2026-01-18,ativo,False,False
+394,Caldeira,camposrhavi@sales.com.br,Tecnologia,Média,RJ,2025-12-18,trial,False,False
+395,Barros,costabento@cavalcanti.net,Educação,Grande,BA,2023-10-18,cancelado,False,False
+396,Monteiro,guerranoah@rezende.br,Varejo,Média,PR,2026-04-13,trial,False,False
+397,Novaes S/A,da-motamaria-flor@lopes.com.br,Saúde,Média,RS,2026-04-09,ativo,False,True
+398,Cunha,maria-laura31@cavalcante.br,Tecnologia,Grande,MG,2024-02-22,cancelado,False,False
+399,Araújo Dias Ltda.,calebe62@da.com,Educação,Pequena,SC,2024-04-16,cancelado,False,False
+400,Casa Grande S.A.,henrycassiano@mendes.com.br,Financeiro,Pequena,BA,2024-12-31,trial,False,False
+401,Vargas,emanuellyborges@andrade.com,Financeiro,Média,CE,2023-09-29,cancelado,False,False
+402,Freitas,bazevedo@vieira.edu.br,Logística,Grande,RS,2025-11-27,ativo,False,False
+403,Dias,omoreira@da.com.br,Financeiro,Grande,PA,2025-05-02,trial,False,False
+404,Garcia,lfogaca@brito.br,Educação,Média,RS,2025-12-20,trial,False,False
+405,Ferreira,freitasbruno@peixoto.com,Tecnologia,Pequena,PR,2024-06-19,cancelado,False,False
+406,Pires,caio73@costa.br,Tecnologia,Grande,CE,2024-10-19,trial,False,False
+407,Costa Santos S/A,aurora74@pinto.com,Logística,Grande,CE,2025-03-03,ativo,False,False
+408,Da Conceição,maria-isiscassiano@alves.br,Financeiro,Média,RS,2025-09-17,ativo,False,False
+409,Carvalho,pda-mata@siqueira.org,Varejo,Média,MG,2024-02-28,trial,False,False
+410,Mendes,tda-paz@fernandes.com,Varejo,Pequena,CE,2024-09-09,ativo,False,False
+411,Machado Da Rosa - Me,da-cruzyan@sousa.br,Financeiro,Média,SP,2025-10-28,ativo,False,True
+412,Freitas,isabella43@novais.net,Saúde,Pequena,MG,2023-12-30,trial,False,False
+413,Duarte Gonçalves - Me,yan27@da.br,Varejo,Média,BA,2026-06-04,cancelado,False,False
+414,Guerra Barbosa S.A.,cardosolorena@cardoso.com,Tecnologia,Pequena,MG,2024-06-15,cancelado,False,False
+415,Ribeiro S.A.,calebe59@ferreira.com.br,Varejo,Grande,RJ,2024-11-25,trial,False,False
+416,Aparecida Araújo - Ei,catarina38@vargas.com,Logística,Pequena,PR,2025-06-27,cancelado,False,False
+417,Sales - Me,jose-miguel68@novaes.br,Saúde,Pequena,MG,2024-03-29,cancelado,False,False
+418,Farias Gonçalves - Ei,wcostela@lopes.gov.br,Saúde,Pequena,SC,2025-11-04,trial,False,False
+419,Rios,ana-luizaaragao@silva.br,Financeiro,Grande,RS,2024-10-19,ativo,False,True
+420,Santos - Ei,manuella15@rios.com,Varejo,Grande,RJ,2026-06-28,cancelado,False,False
+421,Da Rosa Ltda.,ssilveira@gomes.gov.br,Financeiro,Grande,MG,2024-04-18,cancelado,False,False
+422,Araújo S.A.,acastro@aparecida.com.br,Saúde,Pequena,PA,2026-08-30,ativo,False,False
+423,Pacheco,peixotolevi@sa.net,Financeiro,Grande,PR,2024-02-03,trial,False,False
+424,Peixoto,joao-felipe14@montenegro.gov.br,Varejo,Pequena,PR,2025-09-28,ativo,False,False
+425,Aparecida,cecilia48@silva.com.br,Tecnologia,Pequena,SP,2024-03-02,cancelado,False,False
+426,Da Luz Fernandes S.A.,siqueiradanilo@da.net,Varejo,Média,RS,2025-03-01,trial,False,False
+427,Souza Cunha - Ei,,Financeiro,Média,PE,2025-10-17,trial,True,False
+428,Freitas Ltda.,arthur-miguel32@nunes.br,Tecnologia,Grande,SP,2024-02-13,cancelado,False,False
+429,Camargo - Me,bernardocampos@leao.gov.br,Saúde,Pequena,PR,2025-06-14,trial,False,False
+430,Pimenta,camposemanuella@da.com,Logística,Média,SP,2024-04-12,cancelado,False,True
+431,Silveira,mouraleticia@casa.com.br,Tecnologia,Média,CE,2024-11-26,ativo,False,False
+432,Mendes,ana-beatriz13@sampaio.br,Financeiro,Média,MG,2026-09-09,trial,False,False
+433,Da Mota,jguerra@farias.com.br,Varejo,Média,CE,2026-04-23,ativo,False,False
+434,Novais,gustavo86@peixoto.com,Educação,Pequena,PE,2025-12-22,ativo,False,False
+435,Barros,pedro-miguel89@pereira.com,Tecnologia,Pequena,RS,2025-08-12,ativo,False,False
+436,Da Paz,samuel83@rezende.com,Logística,Média,PA,2025-11-20,trial,False,True
+437,Mendes,srodrigues@fernandes.com,Tecnologia,Média,PA,2025-09-21,trial,False,False
+438,Da Cruz - Ei,diegoramos@das.br,Financeiro,Média,BA,2024-10-19,cancelado,False,False
+439,Cunha Ltda.,isadora79@martins.br,Varejo,Média,PE,2026-06-24,trial,False,False
+440,Da Rosa,erick03@sales.org,Educação,Grande,SP,2025-01-19,ativo,False,False
+441,Araújo Ltda.,,Educação,Pequena,PE,2024-07-04,cancelado,True,False
+442,Duarte,onogueira@da.br,Financeiro,Média,PA,2025-05-29,cancelado,False,False
+443,Barros Peixoto S.A.,gabrielda-cunha@vasconcelos.edu.br,Saúde,Pequena,SC,2026-02-21,ativo,False,False
+444,Cardoso,barbosajoao-guilherme@pinto.edu.br,Educação,Grande,SP,2025-05-18,ativo,False,False
+445,Cunha,da-cruzyan@sousa.br,Logística,Média,RJ,2024-03-05,cancelado,False,True
+446,Cavalcante S/A,sousalevi@fogaca.gov.br,Saúde,Média,PR,2025-04-18,ativo,False,False
+447,Da Conceição Pacheco - Me,caioleao@pires.org,Varejo,Pequena,PA,2024-07-09,trial,False,False
+448,Andrade,albuquerquepietra@sampaio.gov.br,Varejo,Grande,RJ,2024-09-10,cancelado,False,False
+449,Pereira Martins - Me,sabrina77@fogaca.com.br,Tecnologia,Grande,PE,2026-02-11,cancelado,False,False
+450,Andrade,alveshelena@pimenta.br,Tecnologia,Pequena,CE,2025-12-23,cancelado,False,False
+451,Da Paz - Ei,antonyleao@cavalcante.com.br,Financeiro,Grande,SC,2025-06-07,ativo,False,False
+452,Brito,luiz-otaviooliveira@cavalcante.edu.br,Logística,Pequena,MG,2024-03-28,ativo,False,True
+453,Santos Sá E Filhos,fernandosilva@mendonca.com.br,Saúde,Grande,BA,2026-04-13,trial,False,False
+454,Aparecida,andradeanthony@porto.com,Logística,Pequena,RJ,2024-07-15,trial,False,False
+455,Melo Rocha Ltda.,joao-lucas38@da.org,Financeiro,Pequena,SC,2023-12-08,trial,False,False
+456,Aragão,cavalcantieduarda@peixoto.br,Tecnologia,Média,BA,2023-10-27,trial,False,False
+457,Freitas Lima - Me,scavalcante@da.org,Tecnologia,Média,SC,2025-02-18,cancelado,False,False
+458,Pereira Borges S/A,azevedomaria-clara@da.com,Varejo,Grande,CE,2024-01-03,ativo,False,False
+459,Da Cruz Nogueira - Me,joao-vitorbarbosa@cunha.net,Financeiro,Média,MG,2024-01-21,cancelado,False,False
+460,Peixoto Mendes S.A.,mramos@alves.com.br,Educação,Pequena,CE,2024-12-02,ativo,False,False
+461,Novais - Me,pcosta@caldeira.com.br,Tecnologia,Grande,MG,2025-08-26,cancelado,False,False
+462,Pires,pimentaravy@leao.net,Varejo,Média,SC,2025-11-22,cancelado,False,False
+463,Aparecida Ltda.,sda-rocha@da.gov.br,Financeiro,Grande,CE,2024-03-24,trial,False,False
+464,Pastor Araújo E Filhos,da-matajose@pastor.com,Educação,Pequena,SC,2025-05-12,ativo,False,False
+465,Macedo Lima Ltda.,benjamimlopes@moura.com,Financeiro,Média,PE,2025-02-28,cancelado,False,False
+466,Aparecida,asafe85@rodrigues.com.br,Financeiro,Grande,PA,2024-01-01,cancelado,False,False
+467,Pacheco Ferreira - Me,ana-carolina51@correia.br,Financeiro,Média,PE,2024-12-24,trial,False,False
+468,Gonçalves,psouza@azevedo.edu.br,Tecnologia,Pequena,SP,2023-10-31,trial,False,False
+469,Oliveira Mendes - Me,ana-carolina86@viana.net,Tecnologia,Pequena,SP,2025-10-17,cancelado,False,False
+470,Da Paz,fernando83@camara.com.br,Educação,Pequena,CE,2024-04-09,trial,False,False
+471,Lopes,araujoerick@sales.gov.br,Financeiro,Média,PR,2024-09-29,cancelado,False,False
+472,Vargas,viniciuspimenta@rocha.br,Varejo,Média,PR,2024-10-11,cancelado,False,True
+473,Sales,da-cunhasophie@fogaca.com,Financeiro,Média,PR,2025-02-23,cancelado,False,False
+474,Duarte,albuquerqueana-beatriz@ribeiro.com.br,Tecnologia,Grande,SP,2024-05-13,ativo,False,False
+475,Pacheco,raul36@camargo.net,Educação,Pequena,SP,2023-12-29,trial,False,False
+476,Santos,caue02@silveira.com,Tecnologia,Grande,BA,2026-02-26,trial,False,False
+477,Moraes - Ei,eloaduarte@costela.edu.br,Educação,Média,PR,2025-07-04,ativo,False,False
+478,Albuquerque - Ei,stephany66@castro.gov.br,Educação,Média,RJ,2024-12-06,cancelado,False,False
+479,Viana,,Financeiro,Pequena,SC,2024-11-07,ativo,True,False
+480,Castro Ltda.,zcastro@nascimento.com.br,Tecnologia,Pequena,CE,2025-04-19,cancelado,False,False
+481,Das Neves,sgarcia@carvalho.net,Educação,Grande,CE,2024-10-10,ativo,False,False
+482,Montenegro,eloabarros@brito.org,Saúde,Pequena,PE,2025-08-15,trial,False,False
+483,Pacheco Macedo Ltda.,tmachado@novaes.com,Financeiro,Grande,CE,2025-06-11,trial,False,False
+484,Lopes,,Educação,Média,PR,2024-09-06,cancelado,True,False
+485,Da Rocha,ana-clara30@fernandes.br,Tecnologia,Grande,MG,2024-12-13,trial,False,False
+486,Guerra Ferreira E Filhos,kevinmelo@guerra.org,Logística,Grande,RS,2024-04-17,trial,False,False
+487,Leão Silva S/A,maria-fernandanovais@alves.com,Logística,Média,SP,2026-05-24,ativo,False,False
+488,Garcia S.A.,nnunes@martins.com,Educação,Grande,CE,2024-06-22,ativo,False,False
+489,Azevedo Câmara - Ei,enzo45@nascimento.br,Varejo,Grande,RJ,2024-09-26,trial,False,False
+490,Pimenta,moreiraarthur-miguel@silveira.com.br,Logística,Pequena,PA,2024-12-11,trial,False,False
+491,Viana Garcia S.A.,sampaiojuliana@sousa.net,Tecnologia,Grande,PR,2023-12-13,cancelado,False,False
+492,Sá,gomesantonio@cavalcanti.br,Varejo,Pequena,BA,2025-09-26,ativo,False,False
+493,Rocha S.A.,marianemoreira@cassiano.com.br,Educação,Grande,PE,2026-05-07,trial,False,False
+494,Farias,portomarcos-vinicius@melo.com.br,Tecnologia,Pequena,BA,2024-08-17,ativo,False,False
+495,Cavalcanti Melo S.A.,riosbenicio@siqueira.com.br,Logística,Grande,SC,2025-12-15,trial,False,False
+496,Pereira - Me,nunesigor@pires.net,Tecnologia,Pequena,RJ,2026-05-13,trial,False,False
+497,Sá S.A.,gvargas@pinto.com,Logística,Pequena,SC,2026-01-19,cancelado,False,False
+498,Viana - Ei,bella62@gomes.edu.br,Educação,Média,CE,2026-04-22,trial,False,False
+499,Casa Grande,sampaioarthur-gabriel@costela.br,Saúde,Grande,PA,2026-01-24,ativo,False,False
+500,Novaes,lorenaaragao@da.edu.br,Saúde,Grande,SP,2026-02-04,ativo,False,False
+501,Montenegro,kcarvalho@gomes.com.br,Financeiro,Média,RS,2023-11-10,trial,False,False
+502,Moraes,yasmin06@da.com,Tecnologia,Pequena,PA,2026-04-21,ativo,False,False
+503,Da Mata,lunna19@moraes.com,Saúde,Média,SC,2024-08-24,trial,False,False
+504,Pereira S/A,eduarda16@silveira.com,Financeiro,Grande,RS,2024-08-22,trial,False,False
+505,Santos Dias Ltda.,xgarcia@freitas.edu.br,Financeiro,Grande,PR,2026-08-17,ativo,False,False
+506,Guerra Ltda.,danilopinto@pacheco.org,Educação,Pequena,RJ,2026-09-21,ativo,False,True
+507,Castro Cassiano Ltda.,danielarocha@oliveira.com,Saúde,Pequena,CE,2025-09-04,cancelado,False,False
+508,Aparecida,freitasfernando@pacheco.edu.br,Saúde,Grande,PE,2026-05-06,cancelado,False,False
+509,Oliveira,ravipacheco@duarte.com,Educação,Grande,RJ,2024-03-08,ativo,False,False
+510,Da Conceição,hadassa18@gomes.gov.br,Tecnologia,Média,RS,2025-11-25,trial,False,False
+511,Da Mata Brito - Ei,fernanda49@sousa.br,Saúde,Média,RS,2026-09-04,trial,False,False
+512,Silveira Ltda.,azevedofelipe@almeida.com,Tecnologia,Média,BA,2025-05-14,cancelado,False,False
+513,Leão,zribeiro@siqueira.br,Varejo,Pequena,MG,2025-09-15,trial,False,False
+514,Vargas Porto - Ei,francisco05@azevedo.gov.br,Tecnologia,Pequena,RS,2024-07-02,ativo,False,False
+515,Viana,kmonteiro@cirino.net,Varejo,Pequena,RJ,2023-11-29,ativo,False,False
+516,Nunes E Filhos,,Logística,Pequena,BA,2023-10-13,ativo,True,False
+517,Pastor Ltda.,maparecida@barros.com,Educação,Grande,PE,2025-07-25,cancelado,False,False
+518,Araújo,jfarias@da.gov.br,Educação,Pequena,MG,2024-06-19,cancelado,False,False
+519,Garcia,sabrinaporto@rocha.com.br,Educação,Pequena,BA,2024-12-07,trial,False,False
+520,Castro Sá Ltda.,borgesrodrigo@rocha.br,Logística,Média,PR,2024-01-20,cancelado,False,False
+521,Melo Nogueira S.A.,isaque17@santos.gov.br,Logística,Pequena,SP,2026-03-05,trial,False,False
+522,Rocha,ana-julia44@nascimento.gov.br,Saúde,Grande,RS,2024-10-18,trial,False,False
+523,Sampaio Correia - Ei,lorenacamara@da.com,Varejo,Grande,BA,2026-07-14,trial,False,False
+524,Barros,barbosasabrina@alves.com,Varejo,Média,MG,2024-11-09,trial,False,False
+525,Rodrigues S/A,eduardaaparecida@da.com,Logística,Grande,SC,2023-12-16,ativo,False,False
+526,Lima,,Logística,Média,CE,2025-11-22,cancelado,True,False
+527,Fonseca Machado S/A,ydas-neves@aragao.com.br,Educação,Média,CE,2025-03-01,trial,False,False
+528,Moraes,juliana97@das.com.br,Saúde,Grande,MG,2023-10-30,cancelado,False,False
+529,Moreira,luisaalbuquerque@lima.gov.br,Saúde,Pequena,RJ,2024-12-15,trial,False,False
+530,Silva,monteiropaulo@montenegro.net,Tecnologia,Média,SP,2024-04-18,trial,False,False
+531,Moura,guilhermeabreu@cunha.com.br,Logística,Pequena,SC,2023-12-16,trial,False,False
+532,Nogueira S/A,,Logística,Pequena,PE,2023-11-23,cancelado,True,False
+533,Da Rosa S.A.,ribeiroelisa@da.org,Saúde,Média,CE,2025-09-25,ativo,False,False
+534,Cavalcanti,,Varejo,Grande,SC,2023-11-30,cancelado,True,False
+535,Fernandes Da Rocha E Filhos,thales41@pereira.com,Educação,Pequena,BA,2025-12-16,ativo,False,False
+536,Araújo,rjesus@rezende.br,Saúde,Pequena,RJ,2025-08-05,trial,False,True
+537,Oliveira Leão - Ei,cardosobenjamim@da.com.br,Educação,Pequena,SP,2025-08-23,trial,False,False
+538,Campos,moraesfrancisco@da.net,Educação,Média,SP,2023-11-28,ativo,False,False
+539,Siqueira,sousaravy@camargo.net,Financeiro,Média,RS,2025-08-04,cancelado,False,False
+540,Fernandes,araujomatteo@silva.br,Saúde,Grande,RS,2024-10-18,cancelado,False,False
+541,Pinto,ana-vitoria30@mendonca.edu.br,Financeiro,Média,MG,2024-07-13,trial,False,False
+542,Sales,ccastro@fernandes.org,Financeiro,Média,RS,2025-01-26,trial,False,False
+543,Aparecida - Me,ana-liviajesus@lopes.edu.br,Educação,Média,PE,2025-06-04,trial,False,False
+544,Mendonça Ltda.,prezende@cassiano.com.br,Financeiro,Grande,PA,2025-09-19,ativo,False,False
+545,Das Neves S.A.,pastorlunna@camargo.com,Logística,Grande,SP,2024-03-15,ativo,False,False
+546,Rezende Ltda.,mariavasconcelos@fonseca.com.br,Educação,Grande,CE,2025-07-14,ativo,False,False
+547,Novais Albuquerque S.A.,jose-miguel47@barros.br,Varejo,Grande,SC,2025-04-16,cancelado,False,False
+548,Da Mota,heloisapimenta@rodrigues.com.br,Tecnologia,Média,PA,2025-12-28,cancelado,False,False
+549,Barros,ofreitas@pires.org,Educação,Pequena,BA,2024-02-27,trial,False,False
+550,Cavalcanti,smachado@rios.com,Saúde,Pequena,SP,2024-01-17,trial,False,False
+551,Brito E Filhos,zvargas@santos.com.br,Saúde,Média,BA,2026-06-22,cancelado,False,False
+552,Machado,lucas88@peixoto.com.br,Varejo,Pequena,PA,2025-06-04,cancelado,False,False
+553,Rodrigues S.A.,qandrade@mendes.com.br,Logística,Média,SP,2026-09-16,ativo,False,False
+554,Aparecida,eloahpires@da.com,Educação,Pequena,RJ,2025-01-01,cancelado,False,False
+555,Almeida,raulabreu@borges.br,Tecnologia,Grande,PR,2025-04-22,ativo,False,False
+556,Pinto,yasminferreira@nascimento.com.br,Financeiro,Pequena,PE,2025-05-14,cancelado,False,False
+557,Pastor,camargobella@teixeira.com,Varejo,Pequena,MG,2024-07-28,cancelado,False,False
+558,Moreira,vasconcelosdaniela@moraes.com,Saúde,Pequena,RS,2026-01-29,trial,False,False
+559,Da Costa Da Paz S.A.,castroana-laura@cunha.gov.br,Varejo,Pequena,PA,2025-05-06,ativo,False,False
+560,Teixeira - Ei,oliver60@aragao.gov.br,Tecnologia,Pequena,RJ,2024-02-07,trial,False,False
+561,Souza Aparecida Ltda.,raquelvasconcelos@rocha.gov.br,Saúde,Pequena,RJ,2025-11-06,ativo,False,False
+562,Casa Grande - Me,piresmaria-vitoria@moraes.edu.br,Logística,Grande,CE,2026-01-01,ativo,False,False
+563,Albuquerque Rodrigues - Ei,afreitas@moreira.net,Educação,Média,CE,2026-05-28,trial,False,False
+564,Garcia Ltda.,guerralivia@barbosa.com,Varejo,Média,CE,2025-01-22,cancelado,False,False
+565,Aragão Alves S.A.,maysa17@da.com,Saúde,Grande,PR,2024-07-19,ativo,False,False
+566,Azevedo,montenegrolucas-gabriel@da.br,Logística,Média,PE,2024-03-02,ativo,False,False
+567,Da Mota,maria-lizcarvalho@mendonca.gov.br,Saúde,Grande,MG,2026-01-07,ativo,False,True
+568,Siqueira Martins Ltda.,marcela39@nogueira.com,Educação,Grande,PE,2024-07-22,ativo,False,False
+569,Siqueira,,Educação,Grande,SC,2026-01-20,trial,True,False
+570,Pereira S.A.,casa-grandezoe@sampaio.net,Educação,Grande,MG,2024-03-14,cancelado,False,False
+571,Rios,brayanvieira@pimenta.org,Varejo,Pequena,BA,2024-11-24,trial,False,False
+572,Castro Ltda.,qabreu@andrade.net,Varejo,Pequena,RS,2026-05-11,ativo,False,False
+573,Barros,benicioborges@camargo.net,Logística,Grande,RJ,2024-01-13,ativo,False,False
+574,Dias Abreu - Me,danilopinto@pacheco.org,Saúde,Pequena,RJ,2024-04-24,cancelado,False,True
+575,Cirino Santos - Me,pedro-lucascostela@araujo.br,Educação,Pequena,SP,2026-05-03,ativo,False,False
+576,Nogueira E Filhos,maya66@camargo.com.br,Educação,Grande,CE,2025-07-19,ativo,False,False
+577,Abreu E Filhos,camposemanuella@da.com,Educação,Grande,PE,2023-12-02,ativo,False,True
+578,Monteiro,lais34@azevedo.br,Logística,Pequena,PE,2024-04-11,ativo,False,False
+579,Brito,carvalhorafaela@da.br,Saúde,Pequena,RS,2024-08-25,cancelado,False,False
+580,Gonçalves,cpinto@da.com.br,Educação,Grande,PE,2024-08-07,trial,False,False
+581,Almeida Pinto E Filhos,xcassiano@vasconcelos.gov.br,Logística,Grande,PA,2026-03-06,cancelado,False,False
+582,Novaes,qmendonca@da.com,Financeiro,Pequena,SP,2025-01-22,cancelado,False,False
+583,Mendes Camargo - Me,maria-isis43@silveira.com,Varejo,Média,PA,2026-05-06,trial,False,False
+584,Pinto,correiamaya@melo.br,Saúde,Média,RJ,2025-04-30,ativo,False,False
+585,Caldeira Castro S.A.,thiagoferreira@camara.org,Tecnologia,Pequena,RJ,2026-02-23,cancelado,False,False
+586,Nogueira,,Varejo,Pequena,SP,2025-10-08,trial,True,False
+587,Aragão,viniciusrezende@nascimento.net,Logística,Média,PA,2023-12-20,cancelado,False,False
+588,Moreira Nogueira - Ei,ibarros@da.org,Logística,Pequena,RJ,2023-09-29,cancelado,False,False
+589,Alves Macedo E Filhos,mribeiro@pacheco.br,Educação,Pequena,PR,2023-10-02,ativo,False,False
+590,Farias,zaragao@viana.com.br,Saúde,Pequena,SC,2025-07-29,trial,False,False
+591,Gonçalves Pires S.A.,dda-conceicao@pires.br,Logística,Grande,BA,2026-05-15,trial,False,False
+592,Andrade Cardoso Ltda.,vasconcelosjoana@peixoto.com,Educação,Média,RJ,2023-11-09,trial,False,False
+593,Pereira Pacheco - Ei,kda-conceicao@costa.br,Financeiro,Grande,RJ,2026-06-22,trial,False,False
+594,Novais - Ei,ravy00@machado.gov.br,Varejo,Média,PR,2024-07-17,cancelado,False,False
+595,Ribeiro,elisasilveira@goncalves.com,Educação,Pequena,PE,2024-11-19,cancelado,False,False
+596,Siqueira E Filhos,henrique33@pastor.br,Saúde,Grande,CE,2024-11-29,trial,False,False
+597,Sá,guerrasophia@silva.gov.br,Varejo,Pequena,CE,2026-09-04,trial,False,False
+598,Oliveira Da Paz S.A.,dcorreia@pastor.gov.br,Financeiro,Grande,MG,2026-07-09,trial,False,True
+599,Abreu,machadoisis@almeida.com.br,Tecnologia,Grande,BA,2024-08-07,cancelado,False,False
+600,Abreu - Ei,,Tecnologia,Média,MG,2024-08-16,trial,True,False
