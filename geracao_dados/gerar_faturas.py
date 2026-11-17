@@ -1,18 +1,10 @@
-import mysql.connector
+from conexao import conectar
 from faker import Faker
-from dotenv import load_dotenv
 from datetime import date, timedelta
 import random
-import os
 from dateutil.relativedelta import relativedelta
-load_dotenv()
 
-conexao = mysql.connector.connect(
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    database=os.getenv("DB_NAME")
-)
+conexao = conectar()
 
 cursor = conexao.cursor()
 fake = Faker('pt_BR')
@@ -49,7 +41,6 @@ for indice, (id_assinatura, data_inicio, data_fim, status) in enumerate(assinatu
         faturas.append((id_assinatura, valor_fatura, data_fatura, data_pagamento, status_pagamento))
 
         data_fatura = data_fatura + relativedelta(months=1)
-
 
 print(f"{len(faturas)} faturas geradas na memória!")
 

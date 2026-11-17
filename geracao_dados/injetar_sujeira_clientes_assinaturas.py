@@ -1,18 +1,9 @@
 # JÁ EXECUTADO. Registro da sujeira aplicada em clientes e assinaturas. Não rodar de novo.
-import mysql.connector
+from conexao import conectar
 from faker import Faker
-from dotenv import load_dotenv
 import random
-import os
 
-load_dotenv()
-
-conexao = mysql.connector.connect(
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    database=os.getenv("DB_NAME")
-)
+conexao = conectar()
 
 cursor = conexao.cursor()
 fake = Faker('pt_BR')

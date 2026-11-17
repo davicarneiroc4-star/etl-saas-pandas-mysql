@@ -1,5 +1,6 @@
 import pandas as pd
 from extract import engine
+from churn_ltv import valor_mensal
 
 assinaturas = pd.read_sql("SELECT * FROM assinaturas_limpo", engine)
 planos = pd.read_sql("SELECT * FROM planos_limpo", engine)
@@ -8,9 +9,7 @@ cancelamentos = pd.read_sql("SELECT * FROM cancelamentos_limpo", engine)
 # Junta o plano em cada assinatura
 df = assinaturas.merge(planos[['id_plano', 'nome_plano', 'periodicidade']], on='id_plano', how='left')
 
-# Valor por mês: plano anual vale 1/12 por mês
-df['valor_mensal'] = df['valor_assinatura']
-df.loc[df['periodicidade'] == 'anual', 'valor_mensal'] = df['valor_assinatura'] / 12
+df['valor_mensal'] = valor_mensal(df)
 
 # MRR: soma do valor mensal das assinaturas ativas
 ativas = df[df['status'] == 'ativa']

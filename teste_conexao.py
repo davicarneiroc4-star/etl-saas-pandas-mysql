@@ -1,14 +1,4 @@
-import mysql.connector
-from dotenv import load_dotenv
-import os
+from extract import engine
 
-load_dotenv()
-
-conexao = mysql.connector.connect(
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    database=os.getenv("DB_NAME")
-)
-
-print("Conectado com sucesso!")
+with engine.connect():
+    print("Conectado com sucesso!")

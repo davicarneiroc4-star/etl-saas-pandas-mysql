@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from extract import engine
+from churn_ltv import valor_mensal
 
 assinaturas = pd.read_sql("SELECT * FROM assinaturas_limpo", engine)
 planos = pd.read_sql("SELECT * FROM planos_limpo", engine)
@@ -10,8 +11,7 @@ planos = pd.read_sql("SELECT * FROM planos_limpo", engine)
 df = assinaturas.merge(planos[['id_plano', 'periodicidade']], on='id_plano', how='left')
 df = df[df['status'] != 'trial']
 
-df['valor_mensal'] = df['valor_assinatura']
-df.loc[df['periodicidade'] == 'anual', 'valor_mensal'] = df['valor_assinatura'] / 12
+df['valor_mensal'] = valor_mensal(df)
 
 df['data_inicio'] = pd.to_datetime(df['data_inicio'])
 df['data_fim'] = pd.to_datetime(df['data_fim'])

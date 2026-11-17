@@ -60,7 +60,7 @@ O `pipeline.py` roda as três etapas com um único comando e pode ser executado 
 - Python
 - Pandas
 - SQLAlchemy e PyMySQL (leitura e escrita no banco com Pandas)
-- mysql-connector-python (scripts de geração de dados)
+- PyMySQL também nos scripts de geração de dados (geracao_dados/conexao.py)
 - Faker (dados sintéticos)
 - python-dotenv (credenciais fora do código)
 - Matplotlib (gráfico)
@@ -275,6 +275,7 @@ pergunta ──► Gemini (function calling) ──► escolhe a ferramenta
 ```bash
 python assistente_ia/agente.py             # chat no terminal
 python -m streamlit run assistente_ia/app.py   # tela no navegador
+python -m pytest tests                     # testes da trava de segurança do SQL (pip install pytest)
 ```
 
 > As respostas são geradas por um modelo de IA e podem conter erros. Os números vêm sempre das ferramentas, e o SQL usado aparece na tela para conferência.
@@ -298,7 +299,8 @@ python -m streamlit run assistente_ia/app.py   # tela no navegador
 │   ├── gerar_cancelamentos.py
 │   ├── gerar_eventos.py
 │   ├── injetar_sujeira_clientes_assinaturas.py
-│   └── injetar_sujeira_faturas.py
+│   ├── injetar_sujeira_faturas.py
+│   └── conexao.py           (conexão com o MySQL usada pelos geradores)
 ├── dados_limpos/            (CSVs gerados pelo pipeline)
 ├── imagens/
 ├── extract.py

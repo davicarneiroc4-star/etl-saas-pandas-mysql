@@ -5,7 +5,6 @@ o assistente funciona sem o MySQL ligado. As métricas reaproveitam as mesmas
 regras de metricas.py e churn_ltv.py.
 """
 import os
-import re
 import sys
 
 import duckdb
@@ -14,7 +13,7 @@ import pandas as pd
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, RAIZ)
 
-from churn_ltv import calcular_churn_mensal, calcular_ltv, periodo_analise, preparar_dados  # noqa: E402
+from churn_ltv import calcular_churn_mensal, calcular_ltv, periodo_analise, preparar_dados, valor_mensal  # noqa: E402
 
 PASTA_DADOS = os.path.join(RAIZ, 'dados_limpos')
 TABELAS = ['clientes', 'planos', 'assinaturas', 'historico_planos',
@@ -29,7 +28,8 @@ for _nome, _df in _dados.items():
     _con.register('_tmp', _df)
     _con.execute(f'CREATE TABLE {_nome} AS SELECT * FROM _tmp')
     _con.unregister('_tmp')
-# Visão pronta com o MRR de cada assinatura (mesma regra de calcular_mrr), para recortes por segmento, estado etc.
+# Visão pronta com o MRR de cada assinatura, para recortes por segmento, estado etc.
+# Mesma regra de churn_ltv.valor_mensal (SQL não chama Python): se a regra mudar, mudar aqui também.
 _con.execute("""
     CREATE VIEW mrr_assinaturas AS
     SELECT a.id_assinatura, a.id_cliente, a.status, p.nome_plano, p.periodicidade,
@@ -66,7 +66,7 @@ def _em_porcentagem(df, colunas):
 
 def _valores_possiveis(tabela, coluna):
     """Valores distintos de uma coluna de texto, se forem poucos (status, plano, segmento...)."""
-    valores = _con.execute(f'SELECT DISTINCT "{coluna}" FROM {tabela} WHERE "{coluna}" IS NOT NULL LIMIT 16').fetchall()
+    valores = _con.cursor().execute(f'SELECT DISTINCT "{coluna}" FROM {tabela} WHERE "{coluna}" IS NOT NULL LIMIT 16').fetchall()
     return sorted(v[0] for v in valores) if len(valores) <= 15 else None
 
 
@@ -75,7 +75,8 @@ def descrever_tabelas() -> dict:
     com poucos valores, a lista exata de valores (use esses valores, com as mesmas letras, nos filtros SQL).
     Inclui a visão mrr_assinaturas, com o valor mensal (MRR) de cada assinatura já calculado.
     Use antes de escrever uma consulta SQL."""
-    descricao = _con.execute(
+    cur = _con.cursor()
+    descricao = cur.execute(
         "SELECT table_name, column_name, data_type FROM information_schema.columns ORDER BY table_name, ordinal_position"
     ).df()
     resultado = {}
@@ -88,7 +89,7 @@ def descrever_tabelas() -> dict:
                 if valores:
                     info['valores'] = valores
             colunas[coluna] = info
-        linhas = _con.execute(f'SELECT COUNT(*) FROM {tabela}').fetchone()[0]
+        linhas = cur.execute(f'SELECT COUNT(*) FROM {tabela}').fetchone()[0]
         resultado[tabela] = {'linhas': linhas, 'colunas': colunas}
     resultado['mrr_assinaturas']['observacao'] = (
         "MRR por assinatura já normalizado (anual / 12). Para MRR atual por qualquer recorte, "
@@ -103,20 +104,22 @@ def consultar_sql(consulta: str) -> dict:
     Args:
         consulta: a consulta SQL, por exemplo "SELECT segmento, COUNT(*) AS clientes FROM clientes GROUP BY segmento".
     """
-    sql = consulta.strip().rstrip(';').strip()
-    if ';' in sql:
-        return {'erro': 'Envie só uma consulta por vez.'}
-    if not re.match(r'(?is)^\s*(select|with)\b', sql):
-        return {'erro': 'Só são permitidas consultas de leitura (SELECT ou WITH).'}
+    sql = consulta.strip()
+    cur = _con.cursor()  # um cursor por chamada: a conexão não aceita duas consultas ao mesmo tempo
     try:
-        resultado = _con.execute(sql).fetch_df()
+        # O parser do DuckDB diz o tipo real do comando (pega "WITH ... DELETE", que começa com WITH)
+        if [s.type for s in cur.extract_statements(sql)] != [duckdb.StatementType.SELECT]:
+            return {'erro': 'Só é permitida UMA consulta de leitura (SELECT).'}
+        cur.execute(sql)
+        # fetchmany não monta o resultado inteiro na memória (um JOIN sem filtro pode ter milhões de linhas)
+        linhas = cur.fetchmany(LIMITE_LINHAS + 1)
     except duckdb.Error as e:
         return {'erro': str(e)}
+    resultado = pd.DataFrame(linhas[:LIMITE_LINHAS], columns=[c[0] for c in cur.description])
     return {
         'consulta': sql,
-        'total_linhas': len(resultado),
-        'linhas': _registros(resultado.head(LIMITE_LINHAS)),
-        'cortado': len(resultado) > LIMITE_LINHAS,
+        'linhas': _registros(resultado),
+        'cortado': len(linhas) > LIMITE_LINHAS,
     }
 
 
@@ -124,8 +127,7 @@ def calcular_mrr() -> dict:
     """Calcula o MRR (receita recorrente mensal) atual, total e por plano.
     Regra: soma do valor mensal das assinaturas ativas; plano anual conta 1/12 do valor por mês."""
     df = _dados['assinaturas'].merge(_dados['planos'][['id_plano', 'nome_plano', 'periodicidade']], on='id_plano', how='left')
-    df['valor_mensal'] = df['valor_assinatura']
-    df.loc[df['periodicidade'] == 'anual', 'valor_mensal'] = df['valor_assinatura'] / 12
+    df['valor_mensal'] = valor_mensal(df)
     ativas = df[df['status'] == 'ativa']
     por_plano = ativas.groupby('nome_plano')['valor_mensal'].agg(['sum', 'count']).sort_values('sum', ascending=False)
     return {

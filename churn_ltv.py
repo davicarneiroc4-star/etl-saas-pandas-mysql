@@ -13,6 +13,12 @@ INICIO_GRAFICO = pd.Period('2025-01', freq='M')
 MESES_JANELA = 12
 
 
+def valor_mensal(df):
+    """Valor por mês (MRR) de cada assinatura: plano anual vale 1/12 do preço.
+    Regra única do projeto; só a visão SQL mrr_assinaturas (assistente_ia/ferramentas.py) repete em SQL."""
+    return df['valor_assinatura'].where(df['periodicidade'] != 'anual', df['valor_assinatura'] / 12)
+
+
 def carregar_dados():
     # Import aqui dentro: quem só usa as funções de cálculo (ex.: assistente_ia, com os CSVs) não precisa do MySQL
     from extract import engine
@@ -30,9 +36,7 @@ def preparar_dados(assinaturas, planos, cancelamentos):
     # Só assinaturas pagas: trial e plano Free não geram receita
     df = df[(df['status'] != 'trial') & (df['nome_plano'] != 'Free')].copy()
 
-    # Valor por mês: plano anual vale 1/12 por mês (mesma regra de metricas.py)
-    df['valor_mensal'] = df['valor_assinatura']
-    df.loc[df['periodicidade'] == 'anual', 'valor_mensal'] = df['valor_assinatura'] / 12
+    df['valor_mensal'] = valor_mensal(df)
 
     df['data_inicio'] = pd.to_datetime(df['data_inicio'])
     df['data_fim'] = pd.to_datetime(df['data_fim'])

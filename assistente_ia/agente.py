@@ -99,6 +99,8 @@ class Assistente:
                 'Verificação automática: a resposta anterior citou números sem chamar nenhuma ferramenta. '
                 'Refaça a resposta consultando as ferramentas e corrija o que estiver diferente. '
                 'Responda direto ao usuário, sem mencionar esta verificação.')
+            if not chamadas and re.search(r'\d', texto):
+                texto += '\n\n⚠️ Esta resposta não consultou os dados. Confira os números antes de usar.'
         return texto, chamadas
 
 
