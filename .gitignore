@@ -11,3 +11,10 @@ venv/
 
 # Configurações locais do editor
 .vscode/
+
+# Segredos do Streamlit (deploy)
+.streamlit/secrets.toml
+
+# Configuracao local do Claude Code
+.claude/
+.mcp.json

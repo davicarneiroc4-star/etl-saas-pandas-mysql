@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter, PercentFormatter
-from extract import engine
 
 PASTA_IMAGENS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'imagens')
 
@@ -15,10 +14,16 @@ MESES_JANELA = 12
 
 
 def carregar_dados():
+    # Import aqui dentro: quem só usa as funções de cálculo (ex.: assistente_ia, com os CSVs) não precisa do MySQL
+    from extract import engine
+
     assinaturas = pd.read_sql("SELECT * FROM assinaturas_limpo", engine)
     planos = pd.read_sql("SELECT * FROM planos_limpo", engine)
     cancelamentos = pd.read_sql("SELECT * FROM cancelamentos_limpo", engine)
+    return preparar_dados(assinaturas, planos, cancelamentos)
 
+
+def preparar_dados(assinaturas, planos, cancelamentos):
     df = assinaturas.merge(planos[['id_plano', 'nome_plano', 'periodicidade']], on='id_plano', how='left')
     df = df.merge(cancelamentos[['id_assinatura', 'tipo_cancelamento']], on='id_assinatura', how='left')
 
@@ -33,6 +38,17 @@ def carregar_dados():
     df['data_fim'] = pd.to_datetime(df['data_fim'])
 
     return df
+
+
+def periodo_analise(df):
+    """Meses da série de churn e a janela dos últimos MESES_JANELA meses."""
+    # Os dados de cancelamento vão só até a data em que foram gerados.
+    # Usar meses depois disso daria churn 0% falso, então a análise para no último mês com cancelamentos.
+    ultimo_mes = df['data_fim'].max().to_period('M')
+    # No mês da primeira assinatura ninguém estava ativo no dia 1º, então a série começa no mês seguinte
+    primeiro_mes = df['data_inicio'].min().to_period('M') + 1
+    meses = pd.period_range(primeiro_mes, ultimo_mes, freq='M')
+    return meses, meses[-MESES_JANELA:]
 
 
 def calcular_churn_mensal(df, meses):
@@ -131,14 +147,7 @@ def grafico_ltv(ltv, caminho):
 
 if __name__ == "__main__":
     df = carregar_dados()
-
-    # Os dados de cancelamento vão só até a data em que foram gerados.
-    # Usar meses depois disso daria churn 0% falso, então a análise para no último mês com cancelamentos.
-    ultimo_mes = df['data_fim'].max().to_period('M')
-    # No mês da primeira assinatura ninguém estava ativo no dia 1º, então a série começa no mês seguinte
-    primeiro_mes = df['data_inicio'].min().to_period('M') + 1
-    meses = pd.period_range(primeiro_mes, ultimo_mes, freq='M')
-    janela = meses[-MESES_JANELA:]
+    meses, janela = periodo_analise(df)
 
     churn = calcular_churn_mensal(df, meses)
 
