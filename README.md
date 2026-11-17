@@ -1,6 +1,6 @@
 # Pipeline ETL para uma empresa SaaS B2B (Python + Pandas + MySQL)
 
-Projeto de engenharia de dados que simula o dia a dia de uma empresa SaaS: um banco MySQL com clientes, assinaturas, faturas e pagamentos, **propositalmente sujo**, que passa por um pipeline **ETL** (Extract, Transform, Load) em Python e termina com métricas de negócio (MRR e churn). Por cima disso, um **assistente com IA** (Gemini) responde perguntas em português sobre os dados, mostrando as ferramentas e o SQL que usou ([ver seção](#assistente-com-ia-pergunte-ao-etl)).
+Projeto de engenharia de dados que simula o dia a dia de uma empresa SaaS: um banco MySQL com clientes, assinaturas, faturas e pagamentos, **propositalmente sujo**, que passa por um pipeline **ETL** (Extract, Transform, Load) em Python e termina com métricas de negócio (MRR e churn). Por cima disso, um **assistente com IA** (Gemini) responde perguntas em português sobre os dados, mostrando as ferramentas e o SQL que usou ([ver seção](#assistente-com-ia-pergunte-ao-etl) · **[testar a demo online](https://etl-saas-pandas-mysql-bwhfcrxmjmau92k9iwd3a7.streamlit.app/)**).
 
 > ⚠️ Todos os dados deste projeto são **sintéticos**, gerados com a biblioteca Faker. Nenhuma pessoa ou empresa real está representada.
 
@@ -245,6 +245,8 @@ LTV = ticket mensal médio × vida média
 ## Assistente com IA: "Pergunte ao ETL"
 
 Um agente com **Google Gemini** que responde perguntas em português sobre os dados limpos, como "qual plano tem o maior churn?" ou "quantas faturas estão atrasadas?". O modelo não calcula nada de cabeça: ele escolhe uma **ferramenta**, a ferramenta consulta os dados e o modelo explica o resultado.
+
+**Demo online:** https://etl-saas-pandas-mysql-bwhfcrxmjmau92k9iwd3a7.streamlit.app/ (se estiver dormindo, clique em "Wake up" e aguarde uns 30 segundos)
 
 ![Tela do assistente](imagens/assistente_ia.png)
 
