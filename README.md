@@ -1,6 +1,6 @@
 # Pipeline ETL para uma empresa SaaS B2B (Python + Pandas + MySQL)
 
-Projeto de engenharia de dados que simula o dia a dia de uma empresa SaaS: um banco MySQL com clientes, assinaturas, faturas e pagamentos, **propositalmente sujo**, que passa por um pipeline **ETL** (Extract, Transform, Load) em Python e termina com métricas de negócio (MRR e churn). Por cima disso, um **assistente com IA** (Gemini) responde perguntas em português sobre os dados, mostrando as ferramentas e o SQL que usou ([ver seção](#assistente-com-ia-pergunte-ao-etl) · **[testar a demo online](https://pergunte-ao-etl.streamlit.app/)**).
+Projeto de engenharia de dados que simula o dia a dia de uma empresa SaaS: um banco MySQL com clientes, assinaturas, faturas e pagamentos, **propositalmente sujo**, que passa por um pipeline **ETL** (Extract, Transform, Load) em Python e termina com métricas de negócio (MRR e churn). Os dados limpos também alimentam um **assistente com IA** (Gemini), que fica num [repositório próprio](https://github.com/davicarneiroc4-star/pergunte-ao-etl) · **[testar a demo online](https://pergunte-ao-etl.streamlit.app/)**.
 
 > ⚠️ Todos os dados deste projeto são **sintéticos**, gerados com a biblioteca Faker. Nenhuma pessoa ou empresa real está representada.
 
@@ -65,7 +65,6 @@ O `pipeline.py` roda as três etapas com um único comando e pode ser executado 
 - python-dotenv (credenciais fora do código)
 - Matplotlib (gráfico)
 - MySQL 8 e MySQL Workbench
-- Google Gemini (google-genai, function calling), DuckDB e Streamlit (assistente com IA)
 
 ## Banco de dados
 
@@ -244,43 +243,11 @@ LTV = ticket mensal médio × vida média
 
 ## Assistente com IA: "Pergunte ao ETL"
 
-Um agente com **Google Gemini** que responde perguntas em português sobre os dados limpos, como "qual plano tem o maior churn?" ou "quantas faturas estão atrasadas?". O modelo não calcula nada de cabeça: ele escolhe uma **ferramenta**, a ferramenta consulta os dados e o modelo explica o resultado.
+Os dados limpos deste pipeline alimentam um agente com **Google Gemini** que responde perguntas em português, como "qual plano tem o maior churn?", mostrando as ferramentas e o SQL que usou. Ele usa as mesmas regras de MRR, churn e LTV deste projeto e roda sem o MySQL.
 
-**Demo online:** https://pergunte-ao-etl.streamlit.app/ (se estiver dormindo, clique em "Wake up" e aguarde uns 30 segundos)
+O assistente fica num repositório próprio: **[pergunte-ao-etl](https://github.com/davicarneiroc4-star/pergunte-ao-etl)** · **[testar a demo online](https://pergunte-ao-etl.streamlit.app/)**
 
 ![Tela do assistente](imagens/assistente_ia.png)
-
-**Como funciona**
-
-```
-pergunta ──► Gemini (function calling) ──► escolhe a ferramenta
-                                              │
-        ┌──────────────┬──────────────┬───────┴──────┬────────────────┐
-  calcular_mrr   churn_mensal   ltv_por_plano   descrever_tabelas   consultar_sql
-        └──────────────┴──── mesmas regras de ─┘                  (DuckDB, só leitura)
-                         metricas.py e churn_ltv.py
-                                              │
-                         resposta + ferramentas e SQL usados
-```
-
-- **Ferramentas** ([assistente_ia/ferramentas.py](assistente_ia/ferramentas.py)): MRR, churn e LTV reaproveitam as funções de `churn_ltv.py` (as regras são as mesmas do projeto). Para o resto, o agente escreve SQL em cima dos CSVs de `dados_limpos/`, carregados num DuckDB em memória. Por isso o assistente **não precisa do MySQL ligado**.
-- **Transparência:** cada resposta mostra quais ferramentas foram chamadas e o SQL executado.
-- **Segurança do SQL:** só uma consulta por vez, só `SELECT`/`WITH`, no máximo 100 linhas, e o DuckDB fica sem acesso a arquivos e rede depois de carregar os dados (testado: `DELETE`, `DROP` e `read_csv('.env')` são bloqueados).
-- **Contra números inventados:** se o modelo responder com números sem ter chamado nenhuma ferramenta, o agente pede para ele refazer a resposta consultando os dados. As ferramentas também devolvem percentuais já arredondados, para o modelo só copiar.
-- **Camada gratuita:** o agente tenta os modelos em ordem (`gemini-3.5-flash-lite`, depois outros) e troca sozinho quando um está sobrecarregado ou sem cota, sem perder a conversa. A resposta leva de 5 a 40 segundos.
-
-**Como rodar**
-
-1. Crie uma chave gratuita em [aistudio.google.com](https://aistudio.google.com) e coloque no `.env`: `GEMINI_API_KEY=sua_chave`.
-2. No terminal (o comando do chat ou o da tela):
-
-```bash
-python assistente_ia/agente.py             # chat no terminal
-python -m streamlit run assistente_ia/app.py   # tela no navegador
-python -m pytest tests                     # testes da trava de segurança do SQL (pip install pytest)
-```
-
-> As respostas são geradas por um modelo de IA e podem conter erros. Os números vêm sempre das ferramentas, e o SQL usado aparece na tela para conferência.
 
 ## Estrutura do repositório
 
@@ -312,11 +279,7 @@ python -m pytest tests                     # testes da trava de segurança do SQ
 ├── metricas.py
 ├── grafico_mrr.py
 ├── churn_ltv.py
-├── teste_conexao.py
-└── assistente_ia/           (agente com Gemini)
-    ├── ferramentas.py       (métricas e SQL somente leitura)
-    ├── agente.py            (Gemini + function calling, chat no terminal)
-    └── app.py               (tela em Streamlit)
+└── teste_conexao.py
 ```
 
 ![Estrutura do projeto](imagens/estrutura_projeto.png)

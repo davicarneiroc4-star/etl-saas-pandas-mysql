@@ -15,12 +15,12 @@ MESES_JANELA = 12
 
 def valor_mensal(df):
     """Valor por mês (MRR) de cada assinatura: plano anual vale 1/12 do preço.
-    Regra única do projeto; só a visão SQL mrr_assinaturas (assistente_ia/ferramentas.py) repete em SQL."""
+    Regra única do projeto. O repositório pergunte-ao-etl tem uma cópia dela (metricas_saas.py e a visão SQL mrr_assinaturas)."""
     return df['valor_assinatura'].where(df['periodicidade'] != 'anual', df['valor_assinatura'] / 12)
 
 
 def carregar_dados():
-    # Import aqui dentro: quem só usa as funções de cálculo (ex.: assistente_ia, com os CSVs) não precisa do MySQL
+    # Import aqui dentro: quem só usa as funções de cálculo (ex.: o assistente pergunte-ao-etl, com os CSVs) não precisa do MySQL
     from extract import engine
 
     assinaturas = pd.read_sql("SELECT * FROM assinaturas_limpo", engine)
